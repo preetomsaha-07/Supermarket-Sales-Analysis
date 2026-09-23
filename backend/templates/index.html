@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket Sales Analysis Dashboard</title>
+    <!-- Tailwind CSS CDN for sleek modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js CDN for fast, interactive visual charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
+
+    <!-- Top Navigation Header -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="flex items-center space-x-3">
+                <div class="p-2.5 bg-blue-600 text-white rounded-xl shadow-md shadow-blue-500/20">
+                    <i data-lucide="shopping-cart" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-slate-900">Supermarket Sales Analysis</h1>
+                    <p class="text-xs text-slate-500">Live Dashboard & REST API powered by Python, Pandas & Flask</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap items-center gap-2">
+                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
+                    <span class="w-1.5 h-1.5 mr-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
+                    Live on Vercel
+                </span>
+                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200">
+                    500 Transactions
+                </span>
+                <a href="/api/overview" target="_blank" class="text-xs text-blue-600 hover:text-blue-800 font-medium px-3 py-1 rounded-md bg-blue-50 hover:bg-blue-100 transition">
+                    View REST API JSON &rarr;
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+
+        <!-- Executive KPI Cards -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            <!-- Total Revenue -->
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="flex items-center justify-between text-slate-500 mb-2">
+                    <span class="text-xs font-semibold uppercase tracking-wider">Total Revenue</span>
+                    <i data-lucide="dollar-sign" class="w-4 h-4 text-emerald-600"></i>
+                </div>
+                <div class="text-2xl font-bold text-slate-900">${{ "{:,.2f}".format(kpis.total_sales) }}</div>
+                <span class="text-xs text-emerald-600 font-medium mt-1 inline-block">Sum (Qty × Unit Price)</span>
+            </div>
+
+            <!-- Total Orders -->
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="flex items-center justify-between text-slate-500 mb-2">
+                    <span class="text-xs font-semibold uppercase tracking-wider">Total Orders</span>
+                    <i data-lucide="package-check" class="w-4 h-4 text-blue-600"></i>
+                </div>
+                <div class="text-2xl font-bold text-slate-900">{{ "{:,}".format(kpis.total_orders) }}</div>
+                <span class="text-xs text-blue-600 font-medium mt-1 inline-block">Verified Transactions</span>
+            </div>
+
+            <!-- Average Basket Size -->
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="flex items-center justify-between text-slate-500 mb-2">
+                    <span class="text-xs font-semibold uppercase tracking-wider">Avg Order Value</span>
+                    <i data-lucide="trending-up" class="w-4 h-4 text-indigo-600"></i>
+                </div>
+                <div class="text-2xl font-bold text-slate-900">${{ "{:,.2f}".format(kpis.average_order_value) }}</div>
+                <span class="text-xs text-slate-500 mt-1 inline-block">Revenue per customer</span>
+            </div>
+
+            <!-- Average Rating -->
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="flex items-center justify-between text-slate-500 mb-2">
+                    <span class="text-xs font-semibold uppercase tracking-wider">Customer Rating</span>
+                    <i data-lucide="star" class="w-4 h-4 text-amber-500"></i>
+                </div>
+                <div class="text-2xl font-bold text-slate-900">⭐ {{ kpis.average_rating }} <span class="text-sm font-normal text-slate-400">/ 10</span></div>
+                <span class="text-xs text-amber-600 font-medium mt-1 inline-block">Overall Satisfaction</span>
+            </div>
+
+            <!-- Top Branch -->
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="flex items-center justify-between text-slate-500 mb-2">
+                    <span class="text-xs font-semibold uppercase tracking-wider">Top Branch</span>
+                    <i data-lucide="award" class="w-4 h-4 text-purple-600"></i>
+                </div>
+                <div class="text-2xl font-bold text-purple-700">{{ kpis.top_branch }}</div>
+                <span class="text-xs text-purple-600 font-medium mt-1 inline-block">Highest Gross Sales</span>
+            </div>
+        </section>
+
+        <!-- Data Cleaning Audit Section (Tasks 1, 2, 3) -->
+        <section class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
+            <details class="group">
+                <summary class="flex items-center justify-between cursor-pointer list-none">
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="shield-check" class="w-5 h-5 text-emerald-600"></i>
+                        <span class="font-semibold text-slate-800">Data Cleaning & Transformation Report (Tasks 1, 2 & 3)</span>
+                    </div>
+                    <span class="text-xs text-slate-500 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <div class="mt-4 pt-4 border-t border-slate-100 grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                    <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200/60">
+                        <p class="font-medium text-slate-700">1. Data Ingestion & Audit</p>
+                        <p class="text-xs text-slate-500 mt-1">Loaded 500 records via <code>pandas.read_csv()</code>. Audited duplicates, invalid data types, and boundary anomalies.</p>
+                    </div>
+                    <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200/60">
+                        <p class="font-medium text-slate-700">2. Missing & Dirty Values Handled</p>
+                        <p class="text-xs text-slate-500 mt-1">Imputed missing ratings using mean ({{ kpis.average_rating }}). Imputed missing customer types using mode. Synchronized Branch & City mapping.</p>
+                    </div>
+                    <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200/60">
+                        <p class="font-medium text-slate-700">3. Calculated Column: Sales</p>
+                        <p class="text-xs text-slate-500 mt-1">Created vectorized <code>Sales = Quantity × Unit Price</code> rounded to 2 decimal places for accurate accounting.</p>
+                    </div>
+                </div>
+            </details>
+        </section>
+
+        <!-- Chart Grid: Tasks 4.1 to 4.6 -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+            <!-- Task 4.1: Top Selling Products (Bar Chart) -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <h2 class="font-bold text-slate-800">Top 10 Selling Products by Revenue</h2>
+                        <p class="text-xs text-slate-500">Task 4.1 — Highest Selling Product: <span class="font-semibold text-blue-600">{{ top_product.Product }} (${{ "{:,.2f}".format(top_product.total_sales) }})</span></p>
+                    </div>
+                    <span class="text-xs font-semibold px-2 py-1 bg-blue-50 text-blue-700 rounded-lg">Bar Chart</span>
+                </div>
+                <div class="h-72">
+                    <canvas id="productsChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Task 4.3: Highest Selling Category (Donut Chart) -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <h2 class="font-bold text-slate-800">Sales Share by Product Category</h2>
+                        <p class="text-xs text-slate-500">Task 4.3 — Top Category: <span class="font-semibold text-indigo-600">{{ top_category.Category }} (${{ "{:,.2f}".format(top_category.total_sales) }})</span></p>
+                    </div>
+                    <span class="text-xs font-semibold px-2 py-1 bg-indigo-50 text-indigo-700 rounded-lg">Donut Chart</span>
+                </div>
+                <div class="h-72 flex items-center justify-center">
+                    <canvas id="categoryChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Task 4.2: Best Performing Branch (Bar Chart) -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <h2 class="font-bold text-slate-800">Branch Performance Comparison</h2>
+                        <p class="text-xs text-slate-500">Task 4.2 — Best Branch: <span class="font-semibold text-emerald-600">{{ best_branch.Branch }} ({{ best_branch.City }}) with ${{ "{:,.2f}".format(best_branch.total_sales) }}</span></p>
+                    </div>
+                    <span class="text-xs font-semibold px-2 py-1 bg-emerald-50 text-emerald-700 rounded-lg">Revenue</span>
+                </div>
+                <div class="h-72">
+                    <canvas id="branchChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Task 4.4: Most Popular Payment Method (Pie Chart) -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <h2 class="font-bold text-slate-800">Payment Method Distribution</h2>
+                        <p class="text-xs text-slate-500">Task 4.4 — Most Popular: <span class="font-semibold text-amber-600">{{ popular_payment.most_popular_method['Payment Method'] }} ({{ popular_payment.most_popular_method.transaction_count }} txns)</span></p>
+                    </div>
+                    <span class="text-xs font-semibold px-2 py-1 bg-amber-50 text-amber-700 rounded-lg">Pie Chart</span>
+                </div>
+                <div class="h-72 flex items-center justify-center">
+                    <canvas id="paymentChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Task 4.5: Member vs Normal Customer Average Spending -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <h2 class="font-bold text-slate-800">Member vs Normal Average Spending</h2>
+                        <p class="text-xs text-slate-500">Task 4.5 — Members spend ${{ customer_spend.spend_difference }} more per order ({{ customer_spend.spend_diff_percent }}% difference)</p>
+                    </div>
+                    <span class="text-xs font-semibold px-2 py-1 bg-violet-50 text-violet-700 rounded-lg">Comparison</span>
+                </div>
+                <div class="h-72">
+                    <canvas id="customerChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Task 4.6: Customer Ratings by Branch -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <h2 class="font-bold text-slate-800">Average Customer Rating by Branch</h2>
+                        <p class="text-xs text-slate-500">Task 4.6 — Overall Rating: <span class="font-semibold text-rose-600">{{ rating_summary.overall_average_rating }} / 10</span></p>
+                    </div>
+                    <span class="text-xs font-semibold px-2 py-1 bg-rose-50 text-rose-700 rounded-lg">Rating</span>
+                </div>
+                <div class="h-72">
+                    <canvas id="ratingChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Time-Series Daily Sales Trend (Line Chart) -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm lg:col-span-2">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <h2 class="font-bold text-slate-800">Daily Sales Trend & 5-Day Moving Average</h2>
+                        <p class="text-xs text-slate-500">Time-series tracking of aggregate daily supermarket revenue</p>
+                    </div>
+                    <span class="text-xs font-semibold px-2 py-1 bg-blue-50 text-blue-700 rounded-lg">Line Chart</span>
+                </div>
+                <div class="h-80">
+                    <canvas id="trendChart"></canvas>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- REST API Directory Quick Reference -->
+        <section class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="font-bold text-slate-900 mb-2">Flask REST API Endpoints</h3>
+            <p class="text-xs text-slate-500 mb-4">All endpoints return standard JSON and can be integrated into external web/mobile applications.</p>
+            <div class="flex flex-wrap gap-2">
+                <a href="/api/health" target="_blank" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 rounded-lg text-xs font-mono text-slate-700 transition">GET /api/health</a>
+                <a href="/api/overview" target="_blank" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 rounded-lg text-xs font-mono text-slate-700 transition">GET /api/overview</a>
+                <a href="/api/analysis/highest-selling-product" target="_blank" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 rounded-lg text-xs font-mono text-slate-700 transition">GET /api/analysis/highest-selling-product</a>
+                <a href="/api/analysis/branch-performance" target="_blank" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 rounded-lg text-xs font-mono text-slate-700 transition">GET /api/analysis/branch-performance</a>
+                <a href="/api/analysis/category-sales" target="_blank" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 rounded-lg text-xs font-mono text-slate-700 transition">GET /api/analysis/category-sales</a>
+                <a href="/api/analysis/payment-methods" target="_blank" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 rounded-lg text-xs font-mono text-slate-700 transition">GET /api/analysis/payment-methods</a>
+                <a href="/api/analysis/customer-spending" target="_blank" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 rounded-lg text-xs font-mono text-slate-700 transition">GET /api/analysis/customer-spending</a>
+                <a href="/api/analysis/rating-summary" target="_blank" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 rounded-lg text-xs font-mono text-slate-700 transition">GET /api/analysis/rating-summary</a>
+                <a href="/api/analysis/sales-trends" target="_blank" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 rounded-lg text-xs font-mono text-slate-700 transition">GET /api/analysis/sales-trends</a>
+                <a href="/api/data?limit=10" target="_blank" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 rounded-lg text-xs font-mono text-slate-700 transition">GET /api/data</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white py-6 mt-12 text-center text-xs text-slate-500">
+        Supermarket Sales Analysis Project | Built with Python, Pandas, Flask & Chart.js | Deployed on Vercel
+    </footer>
+
+    <!-- Pass JSON Data from Flask to JavaScript -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        const topProductsData = {{ top_products_json | safe }};
+        const categoryData = {{ categories_json | safe }};
+        const branchData = {{ branches_json | safe }};
+        const paymentData = {{ payments_json | safe }};
+        const customerData = {{ customer_spend_json | safe }};
+        const ratingData = {{ ratings_json | safe }};
+        const trendData = {{ trends_json | safe }};
+
+        // 1. Top Products Bar Chart
+        new Chart(document.getElementById('productsChart'), {
+            type: 'bar',
+            data: {
+                labels: topProductsData.map(d => d.Product),
+                datasets: [{
+                    label: 'Total Sales ($)',
+                    data: topProductsData.map(d => d.total_sales),
+                    backgroundColor: '#3b82f6',
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { ticks: { callback: v => '$' + v.toLocaleString() } }
+                }
+            }
+        });
+
+        // 2. Category Donut Chart
+        new Chart(document.getElementById('categoryChart'), {
+            type: 'doughnut',
+            data: {
+                labels: categoryData.map(d => d.Category),
+                datasets: [{
+                    data: categoryData.map(d => d.total_sales),
+                    backgroundColor: ['#6366f1', '#ec4899', '#f59e0b', '#10b981', '#06b6d4', '#8b5cf6']
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { position: 'right' } }
+            }
+        });
+
+        // 3. Branch Performance Bar Chart
+        new Chart(document.getElementById('branchChart'), {
+            type: 'bar',
+            data: {
+                labels: branchData.map(d => d.Branch + ' (' + d.City + ')'),
+                datasets: [{
+                    label: 'Total Sales ($)',
+                    data: branchData.map(d => d.total_sales),
+                    backgroundColor: ['#10b981', '#3b82f6', '#f59e0b'],
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { ticks: { callback: v => '$' + v.toLocaleString() } }
+                }
+            }
+        });
+
+        // 4. Payment Method Pie Chart
+        new Chart(document.getElementById('paymentChart'), {
+            type: 'pie',
+            data: {
+                labels: paymentData.map(d => d['Payment Method']),
+                datasets: [{
+                    data: paymentData.map(d => d.transaction_count),
+                    backgroundColor: ['#3b82f6', '#10b981', '#f59e0b']
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { position: 'bottom' } }
+            }
+        });
+
+        // 5. Customer Type Comparison Bar Chart
+        new Chart(document.getElementById('customerChart'), {
+            type: 'bar',
+            data: {
+                labels: customerData.map(d => d['Customer Type']),
+                datasets: [{
+                    label: 'Average Spend ($)',
+                    data: customerData.map(d => d.avg_spending),
+                    backgroundColor: ['#8b5cf6', '#94a3b8'],
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { ticks: { callback: v => '$' + v } }
+                }
+            }
+        });
+
+        // 6. Rating by Branch
+        new Chart(document.getElementById('ratingChart'), {
+            type: 'bar',
+            data: {
+                labels: ratingData.map(d => d.Branch),
+                datasets: [{
+                    label: 'Rating (out of 10)',
+                    data: ratingData.map(d => d.avg_rating),
+                    backgroundColor: '#f43f5e',
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { min: 0, max: 10 }
+                }
+            }
+        });
+
+        // 7. Time-series Sales Trend Line Chart
+        new Chart(document.getElementById('trendChart'), {
+            type: 'line',
+            data: {
+                labels: trendData.map(d => d.DateStr),
+                datasets: [
+                    {
+                        label: 'Daily Sales ($)',
+                        data: trendData.map(d => d.daily_sales),
+                        borderColor: '#3b82f6',
+                        backgroundColor: 'rgba(59, 130, 246, 0.08)',
+                        fill: true,
+                        tension: 0.3
+                    },
+                    {
+                        label: '5-Day Moving Avg ($)',
+                        data: trendData.map(d => d.rolling_avg_sales),
+                        borderColor: '#f97316',
+                        borderDash: [5, 5],
+                        fill: false,
+                        tension: 0.3
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { position: 'top' } },
+                scales: {
+                    y: { ticks: { callback: v => '$' + v.toLocaleString() } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

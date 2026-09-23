@@ -1,16 +1,8 @@
 # ============================================================
-# Supermarket Sales Analysis - Project Dependencies
+# Supermarket Sales Analysis - Core Dependencies
+# Optimized for Fast Serverless Deployment (Vercel, Render)
 # ============================================================
-# Core data processing & manipulation
 pandas>=2.2.0
-
-# Backend REST API framework & cross-origin support
 flask>=3.0.0
 flask-cors>=4.0.0
-
-# Frontend interactive web dashboard & visualization
-streamlit>=1.35.0
-plotly>=5.22.0
-
-# HTTP client for frontend to communicate with backend API
 requests>=2.31.0

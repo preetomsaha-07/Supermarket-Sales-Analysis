@@ -31,12 +31,14 @@ parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if parent_dir not in sys.path:
     sys.path.insert(0, parent_dir)
 
-from flask import Flask, jsonify, request
+import json
+from flask import Flask, jsonify, request, render_template
 from flask_cors import CORS
 from backend.data_analysis import SupermarketAnalytics
 
-# Initialize Flask application
-app = Flask(__name__)
+# Initialize Flask application with explicit templates directory
+template_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "templates")
+app = Flask(__name__, template_folder=template_dir)
 
 # Enable Cross-Origin Resource Sharing (CORS) so frontend applications
 # (like Streamlit running on port 8501 or React) can request data from this API
@@ -54,10 +56,46 @@ except Exception as e:
 
 
 # ---------------------------------------------------------------------------
-# API ROUTES
+# WEB DASHBOARD & API ROUTES
 # ---------------------------------------------------------------------------
 
 @app.route("/", methods=["GET"])
+def web_dashboard():
+    """
+    Renders the full interactive web dashboard (HTML, Tailwind CSS, Chart.js).
+    Works seamlessly on Vercel Serverless without needing any external server.
+    """
+    if analytics is None:
+        return "Error: Supermarket dataset could not be loaded.", 500
+
+    kpis = analytics.get_kpis()
+    prod_info = analytics.get_highest_selling_product(top_n=10)
+    cat_info = analytics.get_highest_selling_category()
+    branch_info = analytics.get_best_performing_branch()
+    payment_info = analytics.get_popular_payment_methods()
+    cust_info = analytics.get_member_vs_normal_spending()
+    rating_info = analytics.get_average_ratings()
+    trend_info = analytics.get_sales_trends()
+
+    return render_template(
+        "index.html",
+        kpis=kpis,
+        top_product=prod_info["highest_by_sales"],
+        top_category=cat_info["highest_category"],
+        best_branch=branch_info["best_branch"],
+        popular_payment=payment_info,
+        customer_spend=cust_info,
+        rating_summary=rating_info,
+        top_products_json=json.dumps(prod_info["top_products_list"]),
+        categories_json=json.dumps(cat_info["all_categories"]),
+        branches_json=json.dumps(branch_info["all_branches"]),
+        payments_json=json.dumps(payment_info["all_methods"]),
+        customer_spend_json=json.dumps(cust_info["summary_table"]),
+        ratings_json=json.dumps(rating_info["ratings_by_branch"]),
+        trends_json=json.dumps(trend_info["daily_sales"])
+    )
+
+
 @app.route("/api/health", methods=["GET"])
 def health_check():
     """
