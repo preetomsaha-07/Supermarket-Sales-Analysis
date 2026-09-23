@@ -1,0 +1,501 @@
+Invoice ID,Branch,City,Customer Type,Gender,Category,Product,Unit Price,Quantity,Payment Method,Rating,Date
+INV-1001,Branch C,Naypyitaw,Member,Male,Fashion accessories,Leather Belt,21.35,2,Credit card,8.8,2026-01-12
+INV-1002,Branch C,Naypyitaw,Member,Female,Electronic accessories,USB-C Fast Charger,18.02,10,Cash,6.1,2026-03-25
+INV-1003,Branch C,Naypyitaw,Member,Female,Health and beauty,Bamboo Toothbrush Set,11.06,1,E-wallet,5.9,2026-02-24
+INV-1004,Branch B,Mandalay,Member,Female,Food and beverages,Organic Green Tea,9.3,2,Credit card,6.8,2026-02-03
+INV-1005,Branch A,Yangon,Normal,Female,Health and beauty,Hydrating Face Serum,42.98,10,E-wallet,6.9,2026-01-25
+INV-1006,Branch C,Naypyitaw,Member,Female,Food and beverages,Organic Green Tea,19.97,2,Credit card,7.2,2026-02-16
+INV-1007,Branch A,Yangon,Member,Female,Sports and travel,Travel Neck Pillow,23.83,2,Credit card,6.0,2026-02-01
+INV-1008,Branch A,Yangon,Member,Male,Sports and travel,Collapsible Duffle Bag,32.25,6,E-wallet,8.3,2026-01-30
+INV-1009,Branch A,Yangon,Normal,Male,Food and beverages,Organic Green Tea,10.95,10,E-wallet,6.7,2026-03-25
+INV-1010,Branch B,Mandalay,Member,Male,Fashion accessories,Casual Backpack,41.28,9,Credit card,8.2,2026-02-24
+INV-1011,Branch C,Naypyitaw,Member,Female,Fashion accessories,Wristwatch,71.65,1,E-wallet,5.9,2026-01-21
+INV-1012,Branch C,Naypyitaw,Member,Female,Health and beauty,Aromatherapy Essential Oil,23.53,8,Credit card,9.4,2026-01-02
+INV-1013,Branch C,Naypyitaw,Normal,Male,Sports and travel,Travel Neck Pillow,15.56,7,Cash,,2026-02-03
+INV-1014,Branch C,Naypyitaw,Normal,Female,Sports and travel,Travel Neck Pillow,25.78,9,Credit card,5.9,2026-01-21
+INV-1015,Branch C,Naypyitaw,Normal,Female,Home and lifestyle,Microfiber Bed Sheet,46.08,2,E-wallet,8.7,2026-02-09
+INV-1016,Branch A,Yangon,Member,Female,Electronic accessories,Power Bank 20000mAh,45.4,9,E-wallet,5.7,2026-03-02
+INV-1017,Branch C,Naypyitaw,Member,Male,Fashion accessories,Wristwatch,85.78,4,E-wallet,7.0,2026-03-27
+INV-1018,Branch C,Naypyitaw,Member,Male,Electronic accessories,USB-C Fast Charger,17.92,6,Cash,7.6,2026-03-17
+INV-1019,Branch A,Yangon,Member,Female,Fashion accessories,Polarized Sunglasses,51.69,6,Cash,6.3,2026-03-27
+INV-1020,Branch B,Mandalay,Member,Female,Sports and travel,Collapsible Duffle Bag,44.01,4,E-wallet,8.4,2026-01-25
+INV-1021,Branch A,Yangon,Member,Male,Food and beverages,Gourmet Ground Coffee,16.58,1,Credit card,9.5,2026-01-13
+INV-1022,Branch A,Yangon,Member,Male,Electronic accessories,USB-C Fast Charger,17.49,9,Credit card,7.1,2026-02-05
+INV-1023,Branch B,Mandalay,Member,Female,Health and beauty,Bamboo Toothbrush Set,9.08,9,E-wallet,9.4,2026-01-31
+INV-1024,Branch A,Yangon,Member,Male,Fashion accessories,Silk Scarf,35.76,3,Credit card,9.6,2026-02-03
+INV-1025,Branch B,Mandalay,Member,Male,Fashion accessories,Leather Belt,25.12,1,Credit card,7.5,2026-02-10
+INV-1026,Branch A,Yangon,Member,Male,Home and lifestyle,Stainless Steel Water Bottle,17.68,9,Cash,6.1,2026-03-18
+INV-1027,Branch A,Yangon,Normal,Female,Health and beauty,Hydrating Face Serum,57.78,10,Cash,7.7,2026-03-21
+INV-1028,Branch A,Yangon,Member,Male,Food and beverages,Artisan Dark Chocolate,12.37,6,Cash,7.0,2026-03-27
+INV-1029,Branch C,Naypyitaw,Member,Male,Electronic accessories,Wireless Earbuds,48.75,10,E-wallet,5.3,2026-01-28
+INV-1030,Branch C,Naypyitaw,Member,Male,Electronic accessories,USB-C Fast Charger,19.8,3,Credit card,7.5,2026-02-08
+INV-1031,Branch C,Naypyitaw,Normal,Female,Sports and travel,Collapsible Duffle Bag,34.88,2,E-wallet,5.7,2026-01-15
+INV-1032,Branch A,Yangon,Normal,Female,Food and beverages,Extra Virgin Olive Oil,24.1,6,Cash,7.8,2026-02-03
+INV-1033,Branch C,Naypyitaw,Member,Female,Electronic accessories,Power Bank 20000mAh,45.73,1,Cash,8.3,2026-03-23
+INV-1034,Branch B,Mandalay,Member,Male,Home and lifestyle,Indoor Plant Pot,25.22,2,Cash,8.8,2026-01-20
+INV-1035,Branch C,Naypyitaw,Member,Male,Home and lifestyle,Stainless Steel Water Bottle,17.52,3,Cash,6.9,2026-01-06
+INV-1036,Branch B,Mandalay,Member,Female,Sports and travel,Non-Slip Yoga Mat,29.9,9,E-wallet,7.0,2026-03-21
+INV-1037,Branch C,Naypyitaw,Member,Female,Fashion accessories,Leather Belt,39.15,1,Cash,9.0,2026-02-22
+INV-1038,Branch C,Naypyitaw,Normal,Female,Food and beverages,Artisan Dark Chocolate,13.66,2,Credit card,4.9,2026-03-02
+INV-1039,Branch A,Yangon,Member,Male,Food and beverages,Extra Virgin Olive Oil,28.41,4,Cash,7.9,2026-02-21
+INV-1040,Branch B,Mandalay,Member,Female,Food and beverages,Extra Virgin Olive Oil,24.83,7,Credit card,8.6,2026-02-12
+INV-1041,Branch A,Yangon,Member,Male,Fashion accessories,Wristwatch,96.98,5,Cash,7.7,2026-02-14
+INV-1042,Branch C,Naypyitaw,Normal,Male,Home and lifestyle,Stainless Steel Water Bottle,16.97,10,Cash,5.0,2026-02-25
+INV-1043,Branch A,Yangon,Member,Female,Food and beverages,Gourmet Ground Coffee,11.12,6,Credit card,7.9,2026-01-16
+INV-1044,Branch C,Naypyitaw,Normal,Male,Sports and travel,Quick-Dry Gym Towel,13.24,5,Credit card,6.1,2026-03-27
+INV-1045,Branch B,Mandalay,Normal,Female,Home and lifestyle,Stainless Steel Water Bottle,20.12,9,E-wallet,6.6,2026-01-27
+INV-1046,Branch B,Mandalay,,Male,Health and beauty,Aromatherapy Essential Oil,21.07,4,Credit card,8.3,2026-01-22
+INV-1047,Branch C,Naypyitaw,Member,Male,Electronic accessories,USB-C Fast Charger,23.75,4,E-wallet,5.8,2026-01-06
+INV-1048,Branch A,Yangon,Normal,Female,Health and beauty,Aromatherapy Essential Oil,28.18,10,Cash,8.0,2026-03-05
+INV-1049,Branch B,Mandalay,Member,Female,Electronic accessories,Power Bank 20000mAh,30.47,9,Credit card,7.6,2026-01-16
+INV-1050,Branch B,Mandalay,Member,Male,Sports and travel,Collapsible Duffle Bag,57.6,10,Cash,8.2,2026-02-26
+INV-1051,Branch C,Naypyitaw,Normal,Male,Home and lifestyle,Indoor Plant Pot,31.94,8,Credit card,8.2,2026-03-23
+INV-1052,Branch B,Mandalay,Normal,Male,Sports and travel,Resistance Bands Kit,16.94,2,E-wallet,6.3,2026-02-12
+INV-1053,Branch B,Mandalay,Normal,Female,Fashion accessories,Leather Belt,23.55,3,E-wallet,5.2,2026-02-22
+INV-1054,Branch B,Mandalay,Member,Male,Electronic accessories,USB-C Fast Charger,25.83,7,E-wallet,7.6,2026-03-31
+INV-1055,Branch A,Yangon,Normal,Male,Health and beauty,Hydrating Face Serum,57.82,5,E-wallet,8.6,2026-02-23
+INV-1056,Branch C,Naypyitaw,Normal,Female,Health and beauty,Herbal Shampoo,14.09,8,Cash,6.8,2026-03-28
+INV-1057,Branch B,Mandalay,Normal,Male,Fashion accessories,Wristwatch,73.84,7,Credit card,7.9,2026-01-11
+INV-1058,Branch C,Naypyitaw,Member,Male,Fashion accessories,Polarized Sunglasses,29.11,6,Cash,6.7,2026-02-18
+INV-1059,Branch B,Mandalay,Normal,Male,Food and beverages,Organic Green Tea,14.58,9,Cash,9.2,2026-01-29
+INV-1060,Branch C,Naypyitaw,Member,Female,Electronic accessories,USB-C Fast Charger,17.59,1,Credit card,6.3,2026-03-02
+INV-1061,Branch C,Naypyitaw,Member,Female,Health and beauty,Mineral Sunscreen SPF 50,30.57,3,Credit card,9.3,2026-01-15
+INV-1062,Branch A,Yangon,Normal,Female,Home and lifestyle,Scented Soy Candle,26.86,10,Credit card,9.3,2026-02-20
+INV-1063,Branch C,Naypyitaw,Member,Female,Electronic accessories,Bluetooth Speaker,78.26,10,E-wallet,8.4,2026-03-14
+INV-1064,Branch A,Yangon,Member,Male,Sports and travel,Travel Neck Pillow,14.97,6,Cash,7.1,2026-03-04
+INV-1065,Branch A,Yangon,Member,Male,Sports and travel,Quick-Dry Gym Towel,18.2,7,Cash,7.4,2026-03-25
+INV-1066,Branch B,Mandalay,Normal,Male,Health and beauty,Aromatherapy Essential Oil,27.21,10,Cash,8.6,2026-01-12
+INV-1067,Branch B,Mandalay,Normal,Female,Health and beauty,Bamboo Toothbrush Set,14.71,7,Cash,7.4,2026-02-11
+INV-1068,Branch A,Yangon,Member,Male,Food and beverages,Extra Virgin Olive Oil,17.59,10,E-wallet,6.5,2026-01-02
+INV-1069,Branch C,Naypyitaw,Normal,Female,Fashion accessories,Silk Scarf,26.24,4,Credit card,7.8,2026-03-04
+INV-1070,Branch B,Mandalay,Normal,Female,Food and beverages,Artisan Dark Chocolate,9.45,4,Cash,7.6,2026-03-02
+INV-1071,Branch C,Naypyitaw,Member,Male,Sports and travel,Collapsible Duffle Bag,35.92,8,Cash,6.4,2026-01-16
+INV-1072,Branch C,Naypyitaw,Member,Female,Sports and travel,Collapsible Duffle Bag,56.38,3,Cash,8.1,2026-02-05
+INV-1073,Branch C,Naypyitaw,Normal,Male,Electronic accessories,USB-C Fast Charger,18.85,6,Cash,4.6,2026-03-10
+INV-1074,Branch A,Yangon,Member,Female,Home and lifestyle,Microfiber Bed Sheet,53.8,3,Credit card,8.2,2026-01-14
+INV-1075,Branch A,Yangon,Normal,Male,Health and beauty,Aromatherapy Essential Oil,19.45,1,Cash,8.6,2026-01-15
+INV-1076,Branch A,Yangon,Member,Female,Home and lifestyle,Scented Soy Candle,14.43,10,E-wallet,5.4,2026-02-01
+INV-1077,Branch A,Yangon,Normal,Male,Home and lifestyle,Stainless Steel Water Bottle,28.44,4,E-wallet,6.9,2026-02-26
+INV-1078,Branch B,Mandalay,Normal,Male,Food and beverages,Almond Milk 1L Pack,13.45,10,E-wallet,5.5,2026-01-27
+INV-1079,Branch C,Naypyitaw,Member,Female,Fashion accessories,Leather Belt,22.17,2,Cash,7.1,2026-03-30
+INV-1080,Branch C,Naypyitaw,Member,Female,Fashion accessories,Casual Backpack,66.81,8,Cash,6.3,2026-02-03
+INV-1081,Branch C,Naypyitaw,Normal,Female,Health and beauty,Hydrating Face Serum,42.69,3,E-wallet,8.5,2026-01-10
+INV-1082,Branch A,Yangon,Member,Male,Home and lifestyle,Stainless Steel Water Bottle,30.66,8,Cash,8.0,2026-03-31
+INV-1083,Branch B,Mandalay,Normal,Male,Health and beauty,Hydrating Face Serum,44.73,7,E-wallet,7.7,2026-01-04
+INV-1084,Branch A,Yangon,Member,Female,Sports and travel,Travel Neck Pillow,22.07,3,Credit card,7.9,2026-02-05
+INV-1085,Branch A,Yangon,Normal,Male,Sports and travel,Quick-Dry Gym Towel,21.6,8,Cash,6.8,2026-03-27
+INV-1086,Branch A,Yangon,Normal,Male,Health and beauty,Aromatherapy Essential Oil,18.61,7,E-wallet,7.5,2026-02-28
+INV-1087,Branch A,Yangon,Member,Male,Electronic accessories,Power Bank 20000mAh,46.62,1,Credit card,7.5,2026-02-22
+INV-1088,Branch A,Yangon,Member,Male,Home and lifestyle,Indoor Plant Pot,26.51,1,Cash,7.5,2026-02-06
+INV-1089,branch a,Mandalay,Normal,Male,Electronic accessories,Wireless Earbuds,64.19,10,E-wallet,8.0,2026-02-09
+INV-1090,Branch C,Naypyitaw,Member,Male,Electronic accessories,USB-C Fast Charger,27.9,2,Credit card,5.6,2026-01-20
+INV-1091,Branch B,Mandalay,Normal,Male,Home and lifestyle,Microfiber Bed Sheet,43.37,8,E-wallet,6.4,2026-03-12
+INV-1092,Branch A,Yangon,Member,Female,Electronic accessories,Bluetooth Speaker,74.77,7,Cash,8.3,2026-02-04
+INV-1093,Branch A,Yangon,Member,Male,Home and lifestyle,Stainless Steel Water Bottle,31.98,8,E-wallet,7.2,2026-03-03
+INV-1094,Branch B,Mandalay,Member,Male,Health and beauty,Mineral Sunscreen SPF 50,32.52,4,Credit card,6.3,2026-02-22
+INV-1095,Branch A,Yangon,Member,Male,Sports and travel,Quick-Dry Gym Towel,14.02,3,Credit card,4.9,2026-03-06
+INV-1096,Branch C,Naypyitaw,Member,Female,Health and beauty,Hydrating Face Serum,41.99,8,Cash,5.8,2026-03-25
+INV-1097,Branch A,Yangon,Member,Male,Food and beverages,Almond Milk 1L Pack,14.31,2,E-wallet,8.6,2026-03-10
+INV-1098,Branch B,Mandalay,Normal,Male,Home and lifestyle,Scented Soy Candle,21.88,4,Credit card,9.0,2026-01-30
+INV-1099,Branch C,Naypyitaw,Member,Female,Sports and travel,Non-Slip Yoga Mat,32.42,5,E-wallet,5.0,2026-01-08
+INV-1100,Branch B,Mandalay,Member,Male,Fashion accessories,Leather Belt,30.75,10,Credit card,6.0,2026-01-23
+INV-1101,Branch A,Yangon,Normal,Male,Home and lifestyle,Ceramic Coffee Mug Set,26.96,10,Cash,7.2,2026-02-02
+INV-1102,Branch B,Mandalay,Member,Female,Health and beauty,Mineral Sunscreen SPF 50,28.87,3,Cash,9.1,2026-03-17
+INV-1103,Branch B,Mandalay,Normal,Male,Sports and travel,Travel Neck Pillow,20.4,5,Cash,7.0,2026-03-03
+INV-1104,Branch A,Yangon,Member,Male,Home and lifestyle,Microfiber Bed Sheet,64.73,5,Cash,8.5,2026-02-20
+INV-1105,Branch B,Mandalay,Member,Female,Home and lifestyle,Indoor Plant Pot,30.66,5,E-wallet,6.3,2026-02-15
+INV-1106,Branch A,Yangon,Normal,Male,Sports and travel,Resistance Bands Kit,23.31,1,Cash,7.2,2026-03-16
+INV-1107,Branch B,Mandalay,Normal,Female,Food and beverages,Extra Virgin Olive Oil,26.95,3,Cash,8.3,2026-02-16
+INV-1108,Branch C,Naypyitaw,Member,Male,Fashion accessories,Casual Backpack,76.13,8,E-wallet,6.6,2026-02-13
+INV-1109,Branch A,Yangon,Member,Female,Fashion accessories,Leather Belt,38.64,7,E-wallet,8.4,2026-02-16
+INV-1110,Branch A,Yangon,Normal,Female,Food and beverages,Almond Milk 1L Pack,7.48,6,Credit card,7.9,2026-03-16
+INV-1111,Branch B,Mandalay,Normal,Male,Electronic accessories,USB-C Fast Charger,21.13,10,E-wallet,7.6,2026-03-20
+INV-1112,Branch A,Yangon,Normal,Male,Sports and travel,Travel Neck Pillow,23.09,2,Cash,9.2,2026-02-08
+INV-1113,Branch B,Mandalay,Member,Female,Home and lifestyle,Ceramic Coffee Mug Set,25.0,6,Credit card,8.2,2026-03-11
+INV-1114,Branch B,Mandalay,Normal,Female,Health and beauty,Hydrating Face Serum,53.68,10,Credit card,9.2,2026-01-05
+INV-1115,Branch C,Naypyitaw,Member,Male,Health and beauty,Herbal Shampoo,22.83,2,E-wallet,6.9,2026-03-24
+INV-1116,Branch B,Mandalay,Member,Male,Fashion accessories,Polarized Sunglasses,53.22,8,Cash,6.2,2026-03-23
+INV-1117,Branch C,Naypyitaw,Normal,Female,Food and beverages,Artisan Dark Chocolate,15.88,10,Cash,8.5,2026-03-12
+INV-1118,Branch A,Yangon,Normal,Female,Food and beverages,Artisan Dark Chocolate,13.68,10,Cash,8.6,2026-01-19
+INV-1119,Branch A,Yangon,Member,Female,Electronic accessories,Wireless Earbuds,38.95,6,E-wallet,6.3,2026-02-11
+INV-1120,Branch A,Yangon,Member,Female,Fashion accessories,Silk Scarf,27.1,2,Credit card,8.3,2026-03-07
+INV-1121,Branch C,Naypyitaw,Member,Female,Home and lifestyle,Scented Soy Candle,23.64,9,Cash,7.8,2026-01-04
+INV-1122,Branch A,Yangon,Normal,Male,Health and beauty,Hydrating Face Serum,40.63,8,Cash,5.4,2026-03-19
+INV-1123,Branch A,Yangon,Member,Male,Home and lifestyle,Stainless Steel Water Bottle,24.32,6,Credit card,7.7,2026-02-07
+INV-1124,Branch B,Mandalay,Member,Male,Electronic accessories,Wireless Earbuds,60.58,9,E-wallet,6.2,2026-02-27
+INV-1125,Branch A,Yangon,Member,Male,Health and beauty,Aromatherapy Essential Oil,25.67,6,Credit card,7.9,2026-02-17
+INV-1126,Branch A,Yangon,Normal,Male,Electronic accessories,Wireless Earbuds,59.95,2,Credit card,8.2,2026-02-17
+INV-1127,Branch A,Yangon,Normal,Male,Sports and travel,Non-Slip Yoga Mat,31.5,7,E-wallet,8.1,2026-02-06
+INV-1128,Branch C,Naypyitaw,Member,Female,Home and lifestyle,Stainless Steel Water Bottle,18.62,8,Cash,5.6,2026-03-13
+INV-1129,Branch B,Mandalay,Member,Male,Home and lifestyle,Ceramic Coffee Mug Set,32.53,9,E-wallet,8.5,2026-03-20
+INV-1130,Branch C,Naypyitaw,Normal,Female,Home and lifestyle,Microfiber Bed Sheet,29.07,5,E-wallet,6.7,2026-02-13
+INV-1131,Branch B,Mandalay,Member,Female,Home and lifestyle,Indoor Plant Pot,15.39,1,Cash,7.5,2026-02-18
+INV-1132,Branch B,Mandalay,Member,Female,Food and beverages,Extra Virgin Olive Oil,26.43,10,Credit card,8.8,2026-01-20
+INV-1133,Branch A,Yangon,Normal,Female,Sports and travel,Non-Slip Yoga Mat,27.62,7,Credit card,7.2,2026-02-04
+INV-1134,Branch A,Yangon,Normal,Female,Food and beverages,Gourmet Ground Coffee,11.77,10,Credit card,7.9,2026-01-06
+INV-1135,Branch A,Yangon,Member,Female,Electronic accessories,USB-C Fast Charger,18.92,4,E-wallet,8.2,2026-02-07
+INV-1136,Branch B,Mandalay,Member,Male,Sports and travel,Quick-Dry Gym Towel,11.28,7,Credit card,6.3,2026-03-13
+INV-1137,Branch C,Naypyitaw,Normal,Female,Health and beauty,Hydrating Face Serum,38.58,8,E-wallet,8.7,2026-03-15
+INV-1138,Branch B,Mandalay,Normal,Male,Food and beverages,Organic Green Tea,13.67,6,Cash,9.2,2026-02-28
+INV-1139,Branch C,Naypyitaw,Normal,Female,Health and beauty,Hydrating Face Serum,31.25,10,Credit card,5.3,2026-02-09
+INV-1140,Branch C,Naypyitaw,Member,Male,Fashion accessories,Polarized Sunglasses,37.87,2,Credit card,6.1,2026-02-14
+INV-1141,Branch B,Mandalay,Normal,Female,Fashion accessories,Polarized Sunglasses,25.13,4,Cash,5.9,2026-03-25
+INV-1142,Branch A,Yangon,Member,Male,Health and beauty,Bamboo Toothbrush Set,16.36,8,Credit card,8.8,2026-03-24
+INV-1143,Branch C,Naypyitaw,Normal,Male,Sports and travel,Travel Neck Pillow,16.11,2,Credit card,7.8,2026-02-05
+INV-1144,Branch C,Naypyitaw,Member,Female,Food and beverages,Gourmet Ground Coffee,17.23,1,Credit card,6.6,2026-03-24
+INV-1145,Branch A,Yangon,Normal,Male,Health and beauty,Bamboo Toothbrush Set,14.1,1,Credit card,8.4,2026-03-25
+INV-1146,Branch A,Yangon,Member,Male,Home and lifestyle,Ceramic Coffee Mug Set,35.24,8,Cash,8.8,2026-02-13
+INV-1147,Branch C,Naypyitaw,Member,Female,Electronic accessories,USB-C Fast Charger,24.2,8,Credit card,7.7,2026-02-16
+INV-1148,Branch B,Mandalay,Normal,Male,Health and beauty,Mineral Sunscreen SPF 50,28.9,1,E-wallet,7.8,2026-01-09
+INV-1149,Branch B,Mandalay,Member,Male,Food and beverages,Extra Virgin Olive Oil,26.47,10,E-wallet,6.8,2026-03-16
+INV-1150,Branch C,Naypyitaw,Member,Male,Food and beverages,Gourmet Ground Coffee,12.06,2,Cash,6.9,2026-02-12
+INV-1151,Branch A,Yangon,Normal,Female,Sports and travel,Quick-Dry Gym Towel,15.61,1,Credit card,6.0,2026-01-28
+INV-1152,Branch B,Mandalay,Normal,Male,Fashion accessories,Leather Belt,42.0,3,Cash,8.6,2026-01-13
+INV-1153,Branch C,Naypyitaw,Normal,Female,Sports and travel,Travel Neck Pillow,26.27,10,Cash,6.9,2026-01-21
+INV-1154,Branch A,Yangon,Normal,Female,Sports and travel,Quick-Dry Gym Towel,9.57,6,Credit card,6.3,2026-02-26
+INV-1155,Branch C,Naypyitaw,Member,Male,Fashion accessories,Wristwatch,57.92,8,E-wallet,6.1,2026-03-28
+INV-1156,Branch C,Naypyitaw,Normal,Male,Food and beverages,Gourmet Ground Coffee,18.05,7,E-wallet,8.4,2026-03-19
+INV-1157,Branch A,Yangon,Normal,Female,Sports and travel,Quick-Dry Gym Towel,20.36,9,E-wallet,8.0,2026-03-08
+INV-1158,Branch A,Yangon,Member,Female,Food and beverages,Gourmet Ground Coffee,24.48,3,E-wallet,5.4,2026-01-29
+INV-1159,Branch B,Mandalay,Normal,Female,Health and beauty,Hydrating Face Serum,37.07,6,Cash,9.7,2026-02-17
+INV-1160,Branch A,Yangon,Member,Female,Sports and travel,Travel Neck Pillow,25.08,3,Cash,9.0,2026-03-02
+INV-1161,Branch C,Naypyitaw,Normal,Male,Health and beauty,Bamboo Toothbrush Set,8.06,2,Cash,6.2,2026-01-20
+INV-1162,Branch C,Naypyitaw,Normal,Male,Electronic accessories,Bluetooth Speaker,50.69,2,Cash,7.1,2026-03-21
+INV-1163,Branch B,Mandalay,Member,Male,Home and lifestyle,Stainless Steel Water Bottle,15.28,9,Credit card,8.1,2026-02-07
+INV-1164,Branch B,Mandalay,Member,Male,Fashion accessories,Wristwatch,67.49,2,Credit card,6.9,2026-03-09
+INV-1165,Branch C,Naypyitaw,Member,Female,Health and beauty,Aromatherapy Essential Oil,14.7,7,E-wallet,6.4,2026-01-03
+INV-1166,Branch B,Mandalay,Normal,Male,Fashion accessories,Polarized Sunglasses,47.0,6,Cash,6.8,2026-02-13
+INV-1167,Branch C,Naypyitaw,Member,Male,Sports and travel,Quick-Dry Gym Towel,17.21,3,Cash,8.3,2026-02-28
+INV-1168,Branch A,Yangon,Member,Female,Fashion accessories,Polarized Sunglasses,31.05,5,Credit card,9.6,2026-03-11
+INV-1169,Branch B,Mandalay,Member,Female,Food and beverages,Extra Virgin Olive Oil,29.24,1,E-wallet,6.8,2026-01-16
+INV-1170,Branch B,Mandalay,Member,Male,Sports and travel,Quick-Dry Gym Towel,20.63,7,Cash,6.1,2026-03-30
+INV-1171,Branch B,Mandalay,Member,Male,Electronic accessories,Power Bank 20000mAh,26.97,10,E-wallet,6.0,2026-02-07
+INV-1172,Branch B,Mandalay,Member,Male,Sports and travel,Travel Neck Pillow,18.29,10,E-wallet,5.9,2026-02-26
+INV-1173,Branch B,Mandalay,Member,Male,Home and lifestyle,Indoor Plant Pot,19.49,1,Cash,7.8,2026-02-16
+INV-1174,Branch C,Naypyitaw,Normal,Female,Electronic accessories,USB-C Fast Charger,26.03,8,Cash,5.2,2026-03-24
+INV-1175,Branch B,Mandalay,Member,Female,Home and lifestyle,Ceramic Coffee Mug Set,30.22,6,Credit card,8.2,2026-03-15
+INV-1176,Branch A,Yangon,Member,Male,Food and beverages,Extra Virgin Olive Oil,16.99,2,Cash,6.1,2026-03-08
+INV-1177,Branch B,Mandalay,Normal,Female,Food and beverages,Extra Virgin Olive Oil,26.08,4,E-wallet,6.6,2026-03-04
+INV-1178,Branch A,Yangon,Member,Female,Health and beauty,Herbal Shampoo,23.48,8,E-wallet,8.4,2026-02-10
+INV-1179,Branch C,Naypyitaw,Member,Female,Home and lifestyle,Stainless Steel Water Bottle,19.94,5,E-wallet,8.0,2026-03-31
+INV-1180,Branch C,Naypyitaw,Member,Male,Home and lifestyle,Ceramic Coffee Mug Set,20.18,4,E-wallet,6.3,2026-03-05
+INV-1181,Branch A,Yangon,Member,Male,Health and beauty,Bamboo Toothbrush Set,9.43,2,Cash,7.0,2026-03-03
+INV-1182,Branch C,Naypyitaw,Member,Male,Home and lifestyle,Scented Soy Candle,14.01,6,Credit card,7.2,2026-03-29
+INV-1183,Branch C,Naypyitaw,Member,Female,Fashion accessories,Silk Scarf,26.57,1,E-wallet,7.4,2026-02-08
+INV-1184,Branch A,Yangon,Member,Female,Food and beverages,Almond Milk 1L Pack,16.74,2,Cash,7.8,2026-03-12
+INV-1185,Branch B,Mandalay,Member,Male,Home and lifestyle,Stainless Steel Water Bottle,16.59,3,Credit card,7.6,2026-01-22
+INV-1186,Branch C,Naypyitaw,Normal,Male,Home and lifestyle,Scented Soy Candle,25.2,1,Cash,9.2,2026-03-15
+INV-1187,Branch B,Mandalay,Normal,Male,Home and lifestyle,Scented Soy Candle,19.97,9,Cash,9.2,2026-03-03
+INV-1188,Branch A,Yangon,Normal,Male,Food and beverages,Gourmet Ground Coffee,11.17,1,Cash,7.1,2026-03-01
+INV-1189,Branch A,Yangon,Member,Female,Food and beverages,Extra Virgin Olive Oil,26.68,6,E-wallet,5.7,2026-02-17
+INV-1190,Branch C,Naypyitaw,Normal,Male,Fashion accessories,Silk Scarf,17.82,8,Cash,5.5,2026-02-07
+INV-1191,Branch B,Mandalay,Normal,Male,Fashion accessories,Leather Belt,37.52,10,E-wallet,6.1,2026-01-21
+INV-1192,Branch B,Mandalay,Normal,Male,Health and beauty,Mineral Sunscreen SPF 50,25.45,2,E-wallet,7.4,2026-01-31
+INV-1193,Branch A,Yangon,Normal,Female,Electronic accessories,Bluetooth Speaker,62.27,8,Cash,4.4,2026-01-14
+INV-1194,Branch B,Mandalay,Member,Male,Sports and travel,Travel Neck Pillow,24.69,6,Cash,5.1,2026-03-13
+INV-1195,Branch A,Yangon,Member,Male,Electronic accessories,Power Bank 20000mAh,37.61,9,Cash,9.6,2026-03-29
+INV-1196,Branch C,Naypyitaw,Member,Female,Health and beauty,Mineral Sunscreen SPF 50,31.1,6,Credit card,6.9,2026-01-19
+INV-1197,Branch A,Yangon,Normal,Male,Home and lifestyle,Scented Soy Candle,12.72,3,E-wallet,8.4,2026-03-08
+INV-1198,Branch B,Mandalay,Member,Female,Food and beverages,Almond Milk 1L Pack,9.82,7,E-wallet,8.1,2026-02-08
+INV-1199,Branch C,Naypyitaw,Member,Male,Sports and travel,Collapsible Duffle Bag,34.89,1,Credit card,7.9,2026-02-23
+INV-1200,Branch C,Naypyitaw,Member,Female,Home and lifestyle,Indoor Plant Pot,19.31,10,Credit card,8.1,2026-03-16
+INV-1201,Branch B,Mandalay,Member,Male,Fashion accessories,Leather Belt,18.76,2,Cash,7.2,2026-02-23
+INV-1202,Branch A,Yangon,Member,Female,Health and beauty,Bamboo Toothbrush Set,16.52,8,E-wallet,8.1,2026-01-08
+INV-1203,Branch C,Naypyitaw,Member,Female,Home and lifestyle,Microfiber Bed Sheet,64.93,8,Credit card,6.7,2026-01-23
+INV-1204,Branch B,Mandalay,Normal,Male,Home and lifestyle,Microfiber Bed Sheet,53.01,5,Credit card,6.1,2026-02-01
+INV-1205,Branch B,Mandalay,Normal,Female,Food and beverages,Extra Virgin Olive Oil,26.1,8,Cash,6.8,2026-02-05
+INV-1206,Branch B,Mandalay,Member,Male,Health and beauty,Mineral Sunscreen SPF 50,34.14,3,Cash,6.6,2026-01-11
+INV-1207,Branch B,Mandalay,Normal,Male,Sports and travel,Quick-Dry Gym Towel,11.78,9,Cash,7.6,2026-02-04
+INV-1208,Branch A,Yangon,Member,Female,Fashion accessories,Polarized Sunglasses,43.44,9,Cash,6.3,2026-01-13
+INV-1209,Branch B,Mandalay,Member,Male,Electronic accessories,USB-C Fast Charger,15.07,9,E-wallet,5.9,2026-03-25
+INV-1210,Branch B,Mandalay,Member,Female,Food and beverages,Extra Virgin Olive Oil,17.71,1,E-wallet,5.4,2026-03-15
+INV-1211,Branch A,Yangon,Member,Female,Fashion accessories,Silk Scarf,35.29,3,E-wallet,4.9,2026-02-20
+INV-1212,Branch B,Mandalay,Member,Male,Electronic accessories,Wireless Earbuds,43.95,10,Cash,9.5,2026-02-06
+INV-1213,Branch B,Mandalay,Normal,Male,Fashion accessories,Wristwatch,70.27,4,E-wallet,6.7,2026-02-28
+INV-1214,Branch C,Naypyitaw,Member,Female,Electronic accessories,Bluetooth Speaker,75.58,10,Credit card,6.1,2026-03-20
+INV-1215,Branch C,Naypyitaw,Normal,Male,Home and lifestyle,Microfiber Bed Sheet,31.21,2,Cash,5.8,2026-02-11
+INV-1216,Branch A,Yangon,Member,Male,Fashion accessories,Silk Scarf,32.34,6,Cash,8.1,2026-01-02
+INV-1217,Branch B,Mandalay,Normal,Female,Electronic accessories,Wireless Earbuds,48.96,3,Credit card,7.4,2026-02-09
+INV-1218,Branch C,Naypyitaw,Member,Male,Food and beverages,Almond Milk 1L Pack,8.65,3,Credit card,7.2,2026-03-19
+INV-1219,Branch B,Mandalay,Member,Male,Home and lifestyle,Ceramic Coffee Mug Set,31.71,10,E-wallet,5.4,2026-02-27
+INV-1220,Branch C,Naypyitaw,Normal,Female,Home and lifestyle,Scented Soy Candle,12.99,9,E-wallet,6.1,2026-03-10
+INV-1221,Branch A,Yangon,Member,Male,Electronic accessories,USB-C Fast Charger,24.32,8,Cash,7.4,2026-01-08
+INV-1222,Branch B,Mandalay,Member,Male,Health and beauty,Bamboo Toothbrush Set,8.64,8,Credit card,6.7,2026-01-03
+INV-1223,Branch B,Mandalay,Member,Female,Sports and travel,Resistance Bands Kit,22.41,1,Credit card,8.0,2026-03-11
+INV-1224,Branch A,Yangon,Normal,Female,Health and beauty,Hydrating Face Serum,32.91,3,E-wallet,8.2,2026-03-24
+INV-1225,Branch B,Mandalay,Member,Male,Health and beauty,Aromatherapy Essential Oil,20.01,9,Cash,8.6,2026-01-16
+INV-1226,Branch A,Yangon,Normal,Male,Home and lifestyle,Ceramic Coffee Mug Set,31.1,4,E-wallet,8.2,2026-02-08
+INV-1227,Branch B,Mandalay,Normal,Male,Home and lifestyle,Indoor Plant Pot,30.47,4,Credit card,5.9,2026-01-25
+INV-1228,Branch C,Naypyitaw,Normal,Female,Sports and travel,Quick-Dry Gym Towel,16.99,1,Cash,5.2,2026-03-18
+INV-1229,Branch A,Yangon,Member,Female,Fashion accessories,Polarized Sunglasses,34.08,4,Credit card,8.2,2026-01-08
+INV-1230,Branch A,Yangon,Member,Male,Fashion accessories,Wristwatch,62.22,10,E-wallet,8.5,2026-01-31
+INV-1231,Branch B,Mandalay,Normal,Female,Health and beauty,Mineral Sunscreen SPF 50,21.23,9,E-wallet,8.7,2026-01-23
+INV-1232,Branch C,Naypyitaw,Normal,Male,Electronic accessories,Bluetooth Speaker,82.37,7,E-wallet,6.7,2026-02-23
+INV-1233,Branch B,Mandalay,Member,Male,Fashion accessories,Wristwatch,70.57,4,Cash,8.0,2026-03-01
+INV-1234,Branch A,Yangon,Normal,Male,Home and lifestyle,Stainless Steel Water Bottle,17.28,4,Cash,6.7,2026-01-11
+INV-1235,Branch B,Mandalay,Normal,Female,Home and lifestyle,Ceramic Coffee Mug Set,18.93,7,Credit card,7.7,2026-01-10
+INV-1236,Branch A,Yangon,Normal,Female,Health and beauty,Herbal Shampoo,23.04,6,Cash,8.9,2026-01-28
+INV-1237,Branch A,Yangon,Normal,Female,Sports and travel,Quick-Dry Gym Towel,20.89,10,E-wallet,7.0,2026-01-31
+INV-1238,Branch C,Naypyitaw,Member,Male,Health and beauty,Aromatherapy Essential Oil,22.54,6,Cash,6.9,2026-03-05
+INV-1239,Branch B,Mandalay,Member,Male,Food and beverages,Artisan Dark Chocolate,9.08,7,Cash,8.7,2026-01-19
+INV-1240,Branch A,Yangon,Member,Male,Food and beverages,Artisan Dark Chocolate,7.16,4,Credit card,8.5,2026-03-05
+INV-1241,Branch C,Naypyitaw,Normal,Male,Food and beverages,Gourmet Ground Coffee,25.46,8,Credit card,8.1,2026-02-15
+INV-1242,Branch A,Yangon,Member,Male,Fashion accessories,Wristwatch,98.48,1,Credit card,8.5,2026-01-10
+INV-1243,Branch C,Naypyitaw,Member,Female,Health and beauty,Herbal Shampoo,22.64,4,Cash,5.9,2026-01-28
+INV-1244,Branch C,Naypyitaw,Member,Female,Home and lifestyle,Stainless Steel Water Bottle,30.52,8,Cash,7.5,2026-02-22
+INV-1245,Branch A,Yangon,Member,Male,Home and lifestyle,Microfiber Bed Sheet,28.63,7,E-wallet,8.9,2026-01-14
+INV-1246,Branch A,Yangon,Member,Female,Fashion accessories,Wristwatch,73.43,6,Cash,7.0,2026-02-17
+INV-1247,Branch B,Mandalay,Member,Female,Sports and travel,Resistance Bands Kit,17.4,2,Credit card,8.6,2026-01-05
+INV-1248,Branch A,Yangon,Member,Male,Home and lifestyle,Indoor Plant Pot,15.12,1,E-wallet,5.4,2026-02-25
+INV-1249,Branch C,Naypyitaw,Normal,Female,Home and lifestyle,Scented Soy Candle,15.68,10,Credit card,5.0,2026-01-10
+INV-1250,Branch C,Naypyitaw,Normal,Female,Fashion accessories,Casual Backpack,35.7,4,Credit card,8.2,2026-02-20
+INV-1251,Branch A,Yangon,Member,Female,Home and lifestyle,Indoor Plant Pot,27.54,9,Cash,8.2,2026-01-18
+INV-1252,Branch C,Naypyitaw,Normal,Male,Electronic accessories,Wireless Earbuds,48.11,2,Cash,8.3,2026-03-18
+INV-1253,Branch B,Mandalay,Normal,Male,Electronic accessories,Bluetooth Speaker,75.26,8,Credit card,6.8,2026-02-18
+INV-1254,Branch B,Mandalay,Member,Male,Electronic accessories,Gaming Mouse,43.29,4,E-wallet,5.4,2026-01-20
+INV-1255,Branch B,Mandalay,Normal,Female,Sports and travel,Quick-Dry Gym Towel,13.12,2,Cash,9.1,2026-02-26
+INV-1256,Branch B,Mandalay,Normal,Female,Fashion accessories,Polarized Sunglasses,26.56,8,Credit card,7.4,2026-01-14
+INV-1257,Branch A,Yangon,Member,Female,Home and lifestyle,Stainless Steel Water Bottle,28.34,7,Cash,7.1,2026-01-11
+INV-1258,Branch C,Naypyitaw,Normal,Female,Home and lifestyle,Stainless Steel Water Bottle,17.88,7,Cash,6.5,2026-02-04
+INV-1259,Branch B,Mandalay,Member,Female,Health and beauty,Mineral Sunscreen SPF 50,24.0,8,E-wallet,6.9,2026-02-01
+INV-1260,Branch C,Naypyitaw,Normal,Female,Health and beauty,Hydrating Face Serum,27.15,1,E-wallet,6.8,2026-03-21
+INV-1261,Branch B,Mandalay,Normal,Male,Health and beauty,Mineral Sunscreen SPF 50,24.18,10,Cash,6.7,2026-03-30
+INV-1262,Branch A,Yangon,Member,Female,Health and beauty,Mineral Sunscreen SPF 50,21.54,8,E-wallet,8.3,2026-02-11
+INV-1263,Branch B,Mandalay,Member,Male,Food and beverages,Organic Green Tea,21.05,4,Credit card,7.5,2026-03-29
+INV-1264,Branch C,Naypyitaw,Member,Male,Sports and travel,Resistance Bands Kit,19.89,5,E-wallet,5.3,2026-02-22
+INV-1265,Branch C,Naypyitaw,Member,Male,Fashion accessories,Casual Backpack,64.64,7,E-wallet,5.3,2026-03-18
+INV-1266,Branch B,Mandalay,Normal,Male,Home and lifestyle,Scented Soy Candle,24.65,6,E-wallet,8.4,2026-03-18
+INV-1267,Branch C,Naypyitaw,Normal,Female,Fashion accessories,Casual Backpack,42.49,10,Cash,9.5,2026-03-28
+INV-1268,Branch C,Naypyitaw,Member,Male,Health and beauty,Hydrating Face Serum,22.4,5,Cash,8.2,2026-03-13
+INV-1269,Branch C,Naypyitaw,Normal,Female,Health and beauty,Mineral Sunscreen SPF 50,23.43,10,Credit card,5.9,2026-01-04
+INV-1270,Branch B,Mandalay,Member,Male,Electronic accessories,Wireless Earbuds,59.94,3,Cash,6.8,2026-01-27
+INV-1271,Branch C,Naypyitaw,Member,Male,Electronic accessories,Power Bank 20000mAh,43.05,8,Cash,6.6,2026-01-15
+INV-1272,Branch A,Yangon,Normal,Female,Sports and travel,Resistance Bands Kit,28.74,4,Credit card,7.5,2026-02-12
+INV-1273,Branch C,Naypyitaw,Member,Male,Fashion accessories,Silk Scarf,29.48,3,Credit card,7.1,2026-01-04
+INV-1274,Branch C,Naypyitaw,Normal,Female,Health and beauty,Bamboo Toothbrush Set,12.73,1,E-wallet,6.2,2026-01-09
+INV-1275,Branch C,Naypyitaw,Member,Female,Food and beverages,Extra Virgin Olive Oil,15.94,2,Cash,8.7,2026-03-09
+INV-1276,Branch C,Naypyitaw,Member,Male,Home and lifestyle,Indoor Plant Pot,25.74,6,Credit card,7.2,2026-01-23
+INV-1277,Branch C,Naypyitaw,Normal,Male,Home and lifestyle,Stainless Steel Water Bottle,16.44,3,Cash,6.3,2026-01-15
+INV-1278,Branch A,Yangon,Member,Female,Home and lifestyle,Indoor Plant Pot,22.36,3,Credit card,7.1,2026-03-04
+INV-1279,Branch C,Naypyitaw,Member,Female,Home and lifestyle,Ceramic Coffee Mug Set,26.81,3,Cash,8.6,2026-03-21
+INV-1280,Branch A,Yangon,Normal,Female,Health and beauty,Herbal Shampoo,12.93,7,E-wallet,7.4,2026-03-05
+INV-1281,Branch B,Mandalay,Normal,Male,Sports and travel,Quick-Dry Gym Towel,15.35,2,Credit card,8.4,2026-01-29
+INV-1282,Branch B,Mandalay,Member,Female,Home and lifestyle,Microfiber Bed Sheet,34.22,8,Credit card,8.3,2026-03-05
+INV-1283,Branch C,Naypyitaw,Member,Female,Food and beverages,Almond Milk 1L Pack,15.88,6,Credit card,8.2,2026-02-26
+INV-1284,Branch C,Naypyitaw,Member,Male,Electronic accessories,USB-C Fast Charger,18.87,1,Credit card,6.8,2026-01-12
+INV-1285,Branch B,Mandalay,Normal,Female,Fashion accessories,Leather Belt,37.46,10,Credit card,8.6,2026-03-20
+INV-1286,Branch C,Naypyitaw,Member,Female,Fashion accessories,Leather Belt,37.33,10,Credit card,6.5,2026-03-10
+INV-1287,Branch A,Yangon,Member,Male,Food and beverages,Almond Milk 1L Pack,9.21,9,E-wallet,7.9,2026-01-13
+INV-1288,Branch A,Yangon,Normal,Male,Electronic accessories,Bluetooth Speaker,79.02,3,E-wallet,5.7,2026-01-19
+INV-1289,Branch C,Naypyitaw,Member,Female,Sports and travel,Quick-Dry Gym Towel,15.36,10,Credit card,7.8,2026-02-18
+INV-1290,Branch B,Mandalay,Member,Female,Health and beauty,Bamboo Toothbrush Set,16.25,6,Credit card,7.3,2026-03-16
+INV-1291,Branch A,Yangon,Normal,Female,Sports and travel,Quick-Dry Gym Towel,17.25,6,E-wallet,8.4,2026-02-20
+INV-1292,Branch A,Yangon,Normal,Female,Health and beauty,Mineral Sunscreen SPF 50,22.13,5,Cash,7.6,2026-03-14
+INV-1293,Branch B,Mandalay,Normal,Female,Electronic accessories,Wireless Earbuds,53.79,8,Cash,9.0,2026-01-21
+INV-1294,Branch B,Mandalay,Member,Male,Fashion accessories,Leather Belt,39.17,5,Cash,9.1,2026-02-05
+INV-1295,Branch A,Yangon,Normal,Male,Electronic accessories,Bluetooth Speaker,69.9,3,Cash,7.8,2026-03-31
+INV-1296,Branch A,Yangon,Member,Female,Sports and travel,Non-Slip Yoga Mat,20.03,8,Cash,7.7,2026-03-08
+INV-1297,Branch C,Naypyitaw,Member,Female,Sports and travel,Travel Neck Pillow,25.44,7,Credit card,7.3,2026-01-30
+INV-1298,Branch B,Mandalay,Member,Female,Electronic accessories,Bluetooth Speaker,56.54,5,Cash,8.3,2026-01-18
+INV-1299,Branch C,Naypyitaw,Normal,Female,Electronic accessories,Gaming Mouse,55.35,10,Credit card,7.2,2026-01-28
+INV-1300,Branch C,Naypyitaw,Normal,Male,Home and lifestyle,Indoor Plant Pot,31.2,2,E-wallet,5.8,2026-01-16
+INV-1301,Branch C,Naypyitaw,Normal,Male,Health and beauty,Mineral Sunscreen SPF 50,31.03,4,Cash,5.4,2026-03-12
+INV-1302,Branch C,Naypyitaw,Normal,Male,Sports and travel,Non-Slip Yoga Mat,43.74,5,Cash,7.7,2026-01-25
+INV-1303,Branch C,Naypyitaw,Member,Female,Fashion accessories,Silk Scarf,23.88,4,Credit card,7.7,2026-03-09
+INV-1304,Branch A,Yangon,Normal,Male,Fashion accessories,Silk Scarf,34.8,10,Credit card,7.5,2026-01-23
+INV-1305,Branch B,Mandalay,Normal,Female,Electronic accessories,Gaming Mouse,33.04,5,Cash,9.0,2026-02-20
+INV-1306,Branch C,Naypyitaw,Member,Male,Health and beauty,Aromatherapy Essential Oil,15.32,9,Credit card,5.9,2026-01-11
+INV-1307,Branch B,Mandalay,Member,Female,Fashion accessories,Wristwatch,62.64,10,Credit card,8.5,2026-03-29
+INV-1308,Branch C,Naypyitaw,Member,Male,Sports and travel,Resistance Bands Kit,13.04,2,E-wallet,5.6,2026-03-20
+INV-1309,Branch C,Naypyitaw,Member,Female,Electronic accessories,Wireless Earbuds,56.24,1,Cash,9.2,2026-03-08
+INV-1310,Branch C,Naypyitaw,Normal,Male,Fashion accessories,Casual Backpack,40.71,5,E-wallet,5.6,2026-01-04
+INV-1311,Branch B,Mandalay,Normal,Male,Home and lifestyle,Scented Soy Candle,16.21,10,Credit card,7.4,2026-03-07
+INV-1312,Branch B,Mandalay,Member,Female,Food and beverages,Artisan Dark Chocolate,7.81,2,E-wallet,7.9,2026-01-15
+INV-1313,Branch A,Yangon,Normal,Female,Electronic accessories,Wireless Earbuds,42.34,8,Credit card,9.0,2026-01-23
+INV-1314,Branch A,Yangon,Normal,Male,Fashion accessories,Casual Backpack,46.17,6,Cash,5.3,2026-02-17
+INV-1315,Branch A,Yangon,Member,Female,Fashion accessories,Leather Belt,37.3,1,E-wallet,5.3,2026-03-01
+INV-1316,Branch B,Mandalay,Normal,Male,Food and beverages,Organic Green Tea,15.74,1,Credit card,6.6,2026-02-08
+INV-1317,Branch C,Naypyitaw,Normal,Male,Food and beverages,Almond Milk 1L Pack,17.66,4,E-wallet,7.5,2026-02-01
+INV-1318,Branch A,Yangon,Member,Male,Electronic accessories,USB-C Fast Charger,22.04,1,E-wallet,4.2,2026-03-26
+INV-1319,Branch B,Mandalay,Normal,Male,Electronic accessories,USB-C Fast Charger,21.89,4,Credit card,9.3,2026-01-19
+INV-1320,Branch C,Naypyitaw,Member,Female,Fashion accessories,Wristwatch,67.31,6,Credit card,8.2,2026-03-16
+INV-1321,Branch A,Yangon,Member,Male,Electronic accessories,Gaming Mouse,55.55,7,Credit card,5.7,2026-02-07
+INV-1322,Branch B,Mandalay,Normal,Male,Sports and travel,Travel Neck Pillow,18.45,5,Cash,9.1,2026-01-18
+INV-1323,Branch C,Naypyitaw,Member,Female,Fashion accessories,Silk Scarf,25.72,7,Cash,6.9,2026-01-27
+INV-1324,Branch B,Mandalay,Member,Male,Electronic accessories,Wireless Earbuds,39.73,5,E-wallet,8.0,2026-01-06
+INV-1325,Branch A,Yangon,Normal,Male,Fashion accessories,Polarized Sunglasses,44.89,6,Credit card,5.1,2026-02-08
+INV-1326,Branch B,Mandalay,Normal,Female,Electronic accessories,Power Bank 20000mAh,46.37,9,E-wallet,6.4,2026-03-01
+INV-1327,Branch A,Yangon,Normal,Female,Electronic accessories,Wireless Earbuds,36.85,4,Cash,8.5,2026-02-17
+INV-1328,Branch C,Naypyitaw,Normal,Female,Home and lifestyle,Stainless Steel Water Bottle,19.4,2,Cash,5.2,2026-03-24
+INV-1329,Branch B,Mandalay,Normal,Female,Food and beverages,Organic Green Tea,8.6,8,Cash,9.0,2026-02-25
+INV-1330,Branch C,Naypyitaw,Member,Female,Health and beauty,Aromatherapy Essential Oil,16.76,4,E-wallet,6.5,2026-02-27
+INV-1331,Branch A,Yangon,Member,Female,Sports and travel,Travel Neck Pillow,20.98,9,Credit card,5.4,2026-02-19
+INV-1332,Branch A,Yangon,Member,Female,Sports and travel,Collapsible Duffle Bag,51.23,7,E-wallet,6.9,2026-03-11
+INV-1333,Branch B,Mandalay,Member,Male,Health and beauty,Mineral Sunscreen SPF 50,19.42,6,Credit card,4.8,2026-02-05
+INV-1334,Branch A,Yangon,Normal,Male,Home and lifestyle,Microfiber Bed Sheet,56.37,4,E-wallet,5.5,2026-03-26
+INV-1335,Branch A,Yangon,Member,Female,Fashion accessories,Wristwatch,90.71,7,Credit card,8.5,2026-01-23
+INV-1336,Branch A,Yangon,Member,Male,Sports and travel,Travel Neck Pillow,26.8,1,E-wallet,6.8,2026-03-14
+INV-1337,Branch C,Naypyitaw,Member,Female,Health and beauty,Bamboo Toothbrush Set,11.4,8,Cash,5.1,2026-03-19
+INV-1338,Branch A,Yangon,Member,Male,Electronic accessories,Bluetooth Speaker,81.31,4,E-wallet,6.8,2026-01-23
+INV-1339,Branch B,Mandalay,Member,Female,Home and lifestyle,Ceramic Coffee Mug Set,31.94,9,E-wallet,9.3,2026-02-17
+INV-1340,Branch C,Naypyitaw,Normal,Male,Home and lifestyle,Scented Soy Candle,17.38,6,Cash,5.9,2026-02-25
+INV-1341,Branch C,Naypyitaw,Normal,Male,Fashion accessories,Wristwatch,82.45,10,E-wallet,6.3,2026-03-17
+INV-1342,Branch A,Yangon,Member,Male,Fashion accessories,Leather Belt,35.49,10,Credit card,9.7,2026-03-14
+INV-1343,Branch A,Yangon,Member,Male,Home and lifestyle,Ceramic Coffee Mug Set,29.51,2,E-wallet,5.8,2026-01-10
+INV-1344,Branch A,Yangon,Member,Male,Fashion accessories,Polarized Sunglasses,48.76,6,Credit card,6.5,2026-02-01
+INV-1345,Branch C,Naypyitaw,Member,Male,Electronic accessories,Wireless Earbuds,36.44,8,E-wallet,9.4,2026-02-22
+INV-1346,Branch B,Mandalay,Normal,Male,Home and lifestyle,Indoor Plant Pot,16.03,8,E-wallet,7.6,2026-03-29
+INV-1347,Branch A,Yangon,Member,Female,Electronic accessories,Bluetooth Speaker,40.9,5,E-wallet,5.3,2026-01-22
+INV-1348,Branch B,Mandalay,Member,Female,Home and lifestyle,Scented Soy Candle,17.41,10,E-wallet,8.0,2026-02-25
+INV-1349,Branch C,Naypyitaw,Member,Male,Fashion accessories,Polarized Sunglasses,23.54,4,E-wallet,7.1,2026-03-12
+INV-1350,Branch C,Naypyitaw,Normal,Male,Sports and travel,Travel Neck Pillow,18.16,2,Cash,7.6,2026-03-04
+INV-1351,Branch A,Yangon,Member,Female,Health and beauty,Hydrating Face Serum,33.19,10,Credit card,5.5,2026-01-27
+INV-1352,Branch A,Yangon,Normal,Female,Health and beauty,Hydrating Face Serum,33.72,7,Credit card,8.8,2026-02-03
+INV-1353,Branch A,Yangon,Normal,Male,Fashion accessories,Casual Backpack,74.85,6,Cash,5.0,2026-02-26
+INV-1354,Branch B,Mandalay,Member,Male,Home and lifestyle,Scented Soy Candle,14.42,2,Cash,6.8,2026-03-11
+INV-1355,Branch B,Mandalay,Normal,Female,Home and lifestyle,Scented Soy Candle,25.45,9,Credit card,7.5,2026-03-02
+INV-1356,Branch C,Naypyitaw,Normal,Male,Food and beverages,Organic Green Tea,13.53,1,Credit card,8.9,2026-03-15
+INV-1357,Branch C,Naypyitaw,Normal,Female,Electronic accessories,Power Bank 20000mAh,29.32,3,E-wallet,8.4,2026-01-17
+INV-1358,Branch A,Yangon,Member,Male,Fashion accessories,Leather Belt,38.02,5,Cash,8.1,2026-01-09
+INV-1359,Branch A,Yangon,Member,Male,Home and lifestyle,Microfiber Bed Sheet,59.7,9,Credit card,8.7,2026-03-31
+INV-1360,Branch C,Naypyitaw,Normal,Male,Electronic accessories,Power Bank 20000mAh,28.74,10,Credit card,8.2,2026-01-13
+INV-1361,Branch A,Yangon,Normal,Female,Food and beverages,Almond Milk 1L Pack,16.56,7,Cash,7.9,2026-03-15
+INV-1362,Branch C,Naypyitaw,Member,Female,Food and beverages,Gourmet Ground Coffee,12.3,10,Credit card,7.0,2026-02-20
+INV-1363,Branch B,Mandalay,Normal,Female,Sports and travel,Quick-Dry Gym Towel,20.97,6,Cash,8.4,2026-02-08
+INV-1364,Branch B,Mandalay,Member,Male,Sports and travel,Non-Slip Yoga Mat,47.23,4,Cash,9.4,2026-02-26
+INV-1365,Branch B,Mandalay,Member,Male,Home and lifestyle,Scented Soy Candle,15.01,4,E-wallet,7.0,2026-03-04
+INV-1366,Branch C,Naypyitaw,Normal,Female,Home and lifestyle,Ceramic Coffee Mug Set,19.18,9,Credit card,8.3,2026-03-09
+INV-1367,Branch C,Naypyitaw,Member,Female,Fashion accessories,Polarized Sunglasses,28.73,8,Cash,6.9,2026-01-26
+INV-1368,Branch B,Mandalay,Member,Male,Home and lifestyle,Indoor Plant Pot,26.71,2,Credit card,6.3,2026-03-04
+INV-1369,Branch C,Naypyitaw,Member,Male,Home and lifestyle,Stainless Steel Water Bottle,20.95,3,E-wallet,6.4,2026-03-30
+INV-1370,Branch A,Yangon,Member,Male,Electronic accessories,USB-C Fast Charger,26.1,4,E-wallet,7.8,2026-03-28
+INV-1371,Branch A,Yangon,Member,Male,Home and lifestyle,Scented Soy Candle,25.83,1,Credit card,5.7,2026-01-23
+INV-1372,Branch C,Naypyitaw,Normal,Female,Food and beverages,Almond Milk 1L Pack,15.66,5,E-wallet,8.0,2026-02-05
+INV-1373,Branch B,Mandalay,Normal,Male,Health and beauty,Mineral Sunscreen SPF 50,20.15,5,Credit card,8.5,2026-02-20
+INV-1374,Branch C,Naypyitaw,Member,Male,Home and lifestyle,Stainless Steel Water Bottle,25.35,5,Credit card,7.3,2026-02-13
+INV-1375,Branch B,Mandalay,Normal,Male,Food and beverages,Extra Virgin Olive Oil,15.77,9,E-wallet,8.8,2026-03-18
+INV-1376,Branch B,Mandalay,Normal,Female,Sports and travel,Non-Slip Yoga Mat,38.35,5,Cash,7.1,2026-02-19
+INV-1377,Branch C,Naypyitaw,Member,Female,Food and beverages,Artisan Dark Chocolate,12.55,8,E-wallet,7.9,2026-03-06
+INV-1378,Branch B,Mandalay,Normal,Female,Food and beverages,Organic Green Tea,14.59,5,E-wallet,7.6,2026-01-24
+INV-1379,Branch C,Naypyitaw,Normal,Female,Fashion accessories,Casual Backpack,45.05,5,Credit card,8.8,2026-02-17
+INV-1380,Branch B,Mandalay,Normal,Male,Electronic accessories,Power Bank 20000mAh,26.34,10,Credit card,7.8,2026-03-02
+INV-1381,Branch A,Yangon,Member,Male,Home and lifestyle,Microfiber Bed Sheet,43.28,3,Cash,6.1,2026-02-22
+INV-1382,Branch C,Naypyitaw,Normal,Male,Fashion accessories,Casual Backpack,73.81,3,E-wallet,7.3,2026-03-22
+INV-1383,Branch A,Yangon,Member,Female,Electronic accessories,Power Bank 20000mAh,31.84,3,Credit card,5.9,2026-01-12
+INV-1384,Branch A,Yangon,Normal,Male,Health and beauty,Aromatherapy Essential Oil,29.45,7,Cash,7.5,2026-02-17
+INV-1385,Branch A,Yangon,Normal,Female,Electronic accessories,Wireless Earbuds,53.8,4,Cash,8.7,2026-02-09
+INV-1386,Branch A,Yangon,Member,Male,Fashion accessories,Polarized Sunglasses,48.83,5,E-wallet,7.2,2026-03-08
+INV-1387,Branch C,Naypyitaw,Member,Male,Sports and travel,Resistance Bands Kit,18.17,8,Credit card,6.1,2026-02-21
+INV-1388,Branch A,Yangon,Member,Female,Fashion accessories,Polarized Sunglasses,40.64,3,Cash,8.0,2026-01-05
+INV-1389,Branch B,Mandalay,Normal,Male,Home and lifestyle,Stainless Steel Water Bottle,15.83,1,Credit card,7.9,2026-01-03
+INV-1390,Branch A,Yangon,Normal,Male,Health and beauty,Aromatherapy Essential Oil,15.98,5,Credit card,5.9,2026-03-30
+INV-1391,Branch C,Naypyitaw,Normal,Male,Health and beauty,Hydrating Face Serum,47.17,5,Credit card,8.0,2026-02-23
+INV-1392,Branch A,Yangon,Member,Female,Food and beverages,Organic Green Tea,18.99,8,Cash,6.1,2026-02-03
+INV-1393,Branch C,Naypyitaw,Normal,Male,Sports and travel,Quick-Dry Gym Towel,12.84,1,Credit card,8.9,2026-03-30
+INV-1394,Branch B,Mandalay,Member,Female,Electronic accessories,Wireless Earbuds,62.21,10,Credit card,5.8,2026-01-12
+INV-1395,Branch C,Naypyitaw,Member,Female,Food and beverages,Artisan Dark Chocolate,10.02,5,Cash,5.1,2026-01-23
+INV-1396,Branch A,Yangon,Normal,Male,Sports and travel,Travel Neck Pillow,19.96,2,Cash,8.2,2026-01-06
+INV-1397,Branch A,Yangon,Normal,Female,Food and beverages,Extra Virgin Olive Oil,29.89,10,Cash,8.1,2026-02-17
+INV-1398,Branch B,Mandalay,Member,Male,Health and beauty,Aromatherapy Essential Oil,18.35,7,Credit card,7.3,2026-02-23
+INV-1399,Branch C,Naypyitaw,Normal,Female,Electronic accessories,USB-C Fast Charger,24.05,1,E-wallet,8.6,2026-01-14
+INV-1400,Branch B,Mandalay,Normal,Male,Home and lifestyle,Indoor Plant Pot,17.63,7,E-wallet,7.7,2026-03-29
+INV-1401,Branch C,Naypyitaw,Normal,Female,Health and beauty,Aromatherapy Essential Oil,15.81,7,Credit card,5.2,2026-03-25
+INV-1402,Branch B,Mandalay,Member,Female,Sports and travel,Travel Neck Pillow,21.27,10,Cash,7.9,2026-02-01
+INV-1403,Branch B,Mandalay,Member,Male,Fashion accessories,Wristwatch,93.17,10,Cash,7.8,2026-01-21
+INV-1404,Branch C,Naypyitaw,Normal,Male,Fashion accessories,Polarized Sunglasses,46.3,6,Cash,9.4,2026-01-07
+INV-1405,Branch C,Naypyitaw,Member,Male,Health and beauty,Herbal Shampoo,11.18,8,E-wallet,7.2,2026-03-05
+INV-1406,Branch B,Mandalay,Member,Male,Sports and travel,Non-Slip Yoga Mat,22.87,7,Cash,7.5,2026-01-12
+INV-1407,Branch C,Naypyitaw,Normal,Male,Home and lifestyle,Stainless Steel Water Bottle,18.52,8,E-wallet,6.9,2026-01-07
+INV-1408,Branch A,Yangon,Normal,Male,Home and lifestyle,Stainless Steel Water Bottle,25.2,6,E-wallet,5.6,2026-03-26
+INV-1409,Branch A,Yangon,Member,Male,Sports and travel,Travel Neck Pillow,21.67,6,E-wallet,5.0,2026-01-22
+INV-1410,Branch B,Mandalay,Member,Male,Electronic accessories,Bluetooth Speaker,67.49,4,Cash,8.6,2026-01-28
+INV-1411,Branch B,Mandalay,Normal,Female,Sports and travel,Travel Neck Pillow,15.51,7,Cash,7.8,2026-03-28
+INV-1412,Branch C,Naypyitaw,Member,Male,Health and beauty,Bamboo Toothbrush Set,18.52,3,E-wallet,4.3,2026-01-07
+INV-1413,Branch C,Naypyitaw,Normal,Male,Home and lifestyle,Ceramic Coffee Mug Set,30.45,3,E-wallet,5.7,2026-02-19
+INV-1414,Branch C,Naypyitaw,Normal,Male,Home and lifestyle,Indoor Plant Pot,22.37,10,E-wallet,8.2,2026-02-05
+INV-1415,Branch B,Mandalay,Normal,Male,Health and beauty,Herbal Shampoo,12.07,10,E-wallet,8.2,2026-02-08
+INV-1416,Branch C,Naypyitaw,Member,Male,Sports and travel,Collapsible Duffle Bag,45.88,4,Cash,8.1,2026-03-29
+INV-1417,Branch B,Mandalay,Normal,Female,Sports and travel,Resistance Bands Kit,21.07,6,E-wallet,8.2,2026-03-13
+INV-1418,Branch B,Mandalay,Normal,Male,Sports and travel,Collapsible Duffle Bag,34.44,7,E-wallet,7.5,2026-01-04
+INV-1419,Branch B,Mandalay,Member,Female,Fashion accessories,Casual Backpack,68.76,3,E-wallet,8.0,2026-01-19
+INV-1420,Branch A,Yangon,Normal,Male,Fashion accessories,Wristwatch,46.74,8,Cash,8.7,2026-03-13
+INV-1421,Branch A,Yangon,Normal,Male,Fashion accessories,Wristwatch,87.35,5,Credit card,5.0,2026-02-18
+INV-1422,Branch B,Mandalay,Member,Male,Home and lifestyle,Scented Soy Candle,12.21,5,Cash,8.7,2026-02-26
+INV-1423,Branch A,Yangon,Normal,Male,Home and lifestyle,Stainless Steel Water Bottle,27.55,4,E-wallet,9.3,2026-02-07
+INV-1424,Branch B,Mandalay,Member,Female,Fashion accessories,Leather Belt,35.64,2,Credit card,7.1,2026-03-13
+INV-1425,Branch B,Mandalay,Member,Male,Electronic accessories,Bluetooth Speaker,60.98,3,Cash,9.0,2026-03-18
+INV-1426,Branch A,Yangon,Normal,Male,Health and beauty,Bamboo Toothbrush Set,14.05,2,E-wallet,6.7,2026-01-29
+INV-1427,Branch A,Yangon,Member,Female,Health and beauty,Bamboo Toothbrush Set,13.91,2,Cash,8.8,2026-03-26
+INV-1428,Branch B,Mandalay,Member,Male,Fashion accessories,Wristwatch,73.65,9,E-wallet,9.5,2026-01-02
+INV-1429,Branch A,Yangon,Normal,Male,Fashion accessories,Wristwatch,94.6,4,E-wallet,8.0,2026-02-11
+INV-1430,Branch B,Mandalay,Normal,Female,Health and beauty,Mineral Sunscreen SPF 50,26.26,5,Cash,7.4,2026-02-17
+INV-1431,Branch C,Naypyitaw,Normal,Male,Health and beauty,Hydrating Face Serum,33.26,4,Cash,5.4,2026-01-13
+INV-1432,Branch A,Yangon,Normal,Female,Sports and travel,Non-Slip Yoga Mat,25.9,4,E-wallet,7.1,2026-01-14
+INV-1433,Branch A,Yangon,Member,Male,Sports and travel,Non-Slip Yoga Mat,40.91,3,Cash,8.1,2026-01-05
+INV-1434,Branch A,Yangon,Member,Female,Food and beverages,Almond Milk 1L Pack,6.85,4,E-wallet,7.0,2026-02-27
+INV-1435,Branch C,Naypyitaw,Member,Male,Electronic accessories,Power Bank 20000mAh,41.83,9,Cash,8.1,2026-01-09
+INV-1436,Branch C,Naypyitaw,Normal,Female,Food and beverages,Almond Milk 1L Pack,7.27,5,Credit card,6.5,2026-02-26
+INV-1437,Branch B,Mandalay,Member,Female,Health and beauty,Herbal Shampoo,18.0,3,E-wallet,8.4,2026-03-11
+INV-1438,Branch B,Mandalay,Normal,Female,Food and beverages,Extra Virgin Olive Oil,31.15,1,Credit card,7.6,2026-01-16
+INV-1439,Branch A,Yangon,Member,Male,Home and lifestyle,Stainless Steel Water Bottle,31.1,5,Cash,8.2,2026-02-14
+INV-1440,Branch A,Yangon,Member,Female,Fashion accessories,Leather Belt,23.3,5,Cash,6.0,2026-03-14
+INV-1441,Branch A,Yangon,Normal,Male,Sports and travel,Collapsible Duffle Bag,27.41,2,Cash,6.1,2026-03-16
+INV-1442,Branch B,Mandalay,Normal,Male,Fashion accessories,Leather Belt,20.4,10,Cash,6.1,2026-03-04
+INV-1443,Branch B,Mandalay,Member,Male,Sports and travel,Collapsible Duffle Bag,30.03,10,Credit card,6.7,2026-02-24
+INV-1444,Branch A,Yangon,Member,Female,Fashion accessories,Silk Scarf,21.36,6,Cash,8.1,2026-03-03
+INV-1445,Branch B,Mandalay,Member,Male,Health and beauty,Bamboo Toothbrush Set,9.2,10,Cash,6.5,2026-01-18
+INV-1446,Branch C,Naypyitaw,Member,Female,Sports and travel,Non-Slip Yoga Mat,44.98,9,Credit card,8.4,2026-03-16
+INV-1447,Branch B,Mandalay,Normal,Female,Electronic accessories,Gaming Mouse,41.73,9,Credit card,8.3,2026-02-16
+INV-1448,Branch B,Mandalay,Member,Male,Fashion accessories,Silk Scarf,26.53,2,Credit card,7.4,2026-03-26
+INV-1449,Branch A,Yangon,Normal,Female,Home and lifestyle,Ceramic Coffee Mug Set,26.03,3,Credit card,7.6,2026-01-19
+INV-1450,Branch C,Naypyitaw,Normal,Male,Electronic accessories,USB-C Fast Charger,24.9,4,Cash,6.9,2026-01-06
+INV-1451,Branch C,Naypyitaw,Member,Male,Health and beauty,Aromatherapy Essential Oil,28.69,1,Cash,7.8,2026-01-14
+INV-1452,Branch C,Naypyitaw,Normal,Male,Sports and travel,Travel Neck Pillow,22.1,10,Cash,7.9,2026-02-16
+INV-1453,Branch C,Naypyitaw,Normal,Female,Home and lifestyle,Microfiber Bed Sheet,41.92,4,Credit card,6.8,2026-02-14
+INV-1454,Branch B,Mandalay,Normal,Female,Home and lifestyle,Ceramic Coffee Mug Set,25.92,4,Cash,7.8,2026-01-28
+INV-1455,Branch A,Yangon,Member,Male,Home and lifestyle,Scented Soy Candle,22.58,7,E-wallet,8.1,2026-03-03
+INV-1456,Branch C,Naypyitaw,Member,Female,Home and lifestyle,Ceramic Coffee Mug Set,29.65,7,Cash,5.0,2026-03-15
+INV-1457,Branch C,Naypyitaw,Member,Female,Home and lifestyle,Ceramic Coffee Mug Set,19.01,5,E-wallet,7.4,2026-02-21
+INV-1458,Branch C,Naypyitaw,Normal,Female,Sports and travel,Travel Neck Pillow,27.26,4,Credit card,9.7,2026-03-03
+INV-1459,Branch A,Yangon,Member,Male,Home and lifestyle,Ceramic Coffee Mug Set,32.3,3,Credit card,7.4,2026-01-22
+INV-1460,Branch C,Naypyitaw,Normal,Male,Home and lifestyle,Stainless Steel Water Bottle,16.17,7,Credit card,5.6,2026-01-26
+INV-1461,Branch C,Naypyitaw,Normal,Male,Fashion accessories,Wristwatch,50.2,8,E-wallet,7.7,2026-03-10
+INV-1462,Branch C,Naypyitaw,Normal,Female,Health and beauty,Herbal Shampoo,23.53,9,E-wallet,8.8,2026-03-28
+INV-1463,Branch C,Naypyitaw,Member,Male,Food and beverages,Organic Green Tea,17.77,7,Cash,8.4,2026-02-18
+INV-1464,Branch B,Mandalay,Normal,Female,Health and beauty,Herbal Shampoo,13.82,4,E-wallet,5.4,2026-03-18
+INV-1465,Branch C,Naypyitaw,Member,Female,Electronic accessories,Wireless Earbuds,52.34,2,Credit card,6.9,2026-01-27
+INV-1466,Branch C,Naypyitaw,Normal,Male,Food and beverages,Organic Green Tea,10.17,10,Cash,8.6,2026-02-24
+INV-1467,Branch C,Naypyitaw,Member,Male,Sports and travel,Quick-Dry Gym Towel,18.81,7,Credit card,7.6,2026-01-23
+INV-1468,Branch B,Mandalay,Normal,Male,Food and beverages,Extra Virgin Olive Oil,23.55,7,E-wallet,8.6,2026-03-26
+INV-1469,Branch A,Yangon,Normal,Male,Sports and travel,Resistance Bands Kit,13.81,9,Credit card,6.8,2026-03-12
+INV-1470,Branch C,Naypyitaw,Normal,Female,Fashion accessories,Silk Scarf,37.19,1,E-wallet,8.5,2026-03-02
+INV-1471,Branch C,Naypyitaw,Member,Female,Food and beverages,Artisan Dark Chocolate,9.08,10,Cash,7.0,2026-02-21
+INV-1472,Branch C,Naypyitaw,Normal,Male,Sports and travel,Collapsible Duffle Bag,26.9,3,Credit card,7.2,2026-01-26
+INV-1473,Branch C,Naypyitaw,Normal,Male,Fashion accessories,Polarized Sunglasses,47.44,9,Credit card,6.3,2026-01-22
+INV-1474,Branch C,Naypyitaw,Member,Female,Sports and travel,Non-Slip Yoga Mat,47.32,2,E-wallet,8.3,2026-02-15
+INV-1475,Branch C,Naypyitaw,Member,Female,Home and lifestyle,Scented Soy Candle,23.79,2,E-wallet,7.5,2026-03-13
+INV-1476,Branch C,Naypyitaw,Member,Male,Fashion accessories,Wristwatch,97.01,8,E-wallet,7.6,2026-02-03
+INV-1477,Branch A,Yangon,Member,Female,Home and lifestyle,Scented Soy Candle,20.05,6,E-wallet,8.4,2026-02-02
+INV-1478,Branch C,Naypyitaw,Normal,Male,Sports and travel,Quick-Dry Gym Towel,21.56,10,Credit card,6.4,2026-02-13
+INV-1479,Branch B,Mandalay,Normal,Female,Health and beauty,Hydrating Face Serum,31.8,7,Credit card,9.7,2026-03-28
+INV-1480,Branch C,Naypyitaw,Member,Male,Health and beauty,Mineral Sunscreen SPF 50,25.81,1,E-wallet,6.5,2026-02-06
+INV-1481,Branch A,Yangon,Member,Male,Electronic accessories,Gaming Mouse,71.91,8,Cash,6.2,2026-03-15
+INV-1482,Branch B,Mandalay,Member,Female,Health and beauty,Herbal Shampoo,13.52,4,E-wallet,6.2,2026-01-26
+INV-1483,Branch A,Yangon,Normal,Male,Fashion accessories,Polarized Sunglasses,24.2,2,Credit card,7.9,2026-03-20
+INV-1484,Branch A,Yangon,Normal,Female,Health and beauty,Mineral Sunscreen SPF 50,27.79,8,E-wallet,8.7,2026-03-15
+INV-1485,Branch B,Mandalay,Member,Male,Health and beauty,Herbal Shampoo,21.25,3,Cash,8.4,2026-03-03
+INV-1486,Branch C,Naypyitaw,Member,Male,Health and beauty,Herbal Shampoo,16.86,2,Credit card,7.2,2026-03-30
+INV-1487,Branch A,Yangon,Member,Female,Health and beauty,Bamboo Toothbrush Set,9.11,6,Credit card,6.4,2026-03-12
+INV-1488,Branch B,Mandalay,Member,Male,Home and lifestyle,Microfiber Bed Sheet,41.54,8,Credit card,7.1,2026-02-17
+INV-1489,Branch B,Mandalay,Normal,Male,Health and beauty,Herbal Shampoo,18.57,10,Credit card,8.4,2026-02-04
+INV-1490,Branch A,Yangon,Normal,Male,Fashion accessories,Leather Belt,37.2,3,Credit card,4.5,2026-02-23
+INV-1491,Branch B,Mandalay,Member,Male,Health and beauty,Mineral Sunscreen SPF 50,20.77,10,Cash,5.5,2026-01-21
+INV-1492,Branch A,Yangon,Member,Male,Health and beauty,Hydrating Face Serum,39.09,6,Cash,6.9,2026-03-13
+INV-1493,Branch B,Mandalay,Member,Male,Electronic accessories,Bluetooth Speaker,79.03,10,Cash,7.6,2026-03-25
+INV-1494,Branch C,Naypyitaw,Member,Male,Food and beverages,Extra Virgin Olive Oil,25.46,8,E-wallet,7.2,2026-01-11
+INV-1495,Branch B,Mandalay,Normal,Male,Sports and travel,Resistance Bands Kit,27.63,6,Credit card,7.7,2026-02-21
+INV-1496,Branch A,Yangon,Member,Male,Fashion accessories,Casual Backpack,49.26,5,E-wallet,7.7,2026-02-20
+INV-1497,Branch B,Mandalay,Normal,Male,Sports and travel,Collapsible Duffle Bag,42.19,8,Credit card,6.0,2026-01-03
+INV-1498,Branch A,Yangon,Normal,Male,Sports and travel,Non-Slip Yoga Mat,25.9,7,Cash,5.2,2026-03-02
+INV-1499,Branch C,Naypyitaw,Member,Male,Home and lifestyle,Scented Soy Candle,13.66,10,Cash,7.9,2026-02-19
+INV-1500,Branch B,Mandalay,Member,Male,Health and beauty,Herbal Shampoo,11.97,3,Cash,7.9,2026-02-11
