@@ -240,6 +240,96 @@ def get_data():
 
 
 # ---------------------------------------------------------------------------
+# MACHINE LEARNING PREDICTION ENDPOINTS
+# ---------------------------------------------------------------------------
+
+# Load the trained model pipeline and metadata at startup (if available)
+import joblib
+
+MODEL_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "models", "sales_predictor.pkl")
+METADATA_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "models", "model_metadata.json")
+
+ml_model = None
+ml_metadata = None
+
+if os.path.exists(MODEL_PATH):
+    try:
+        ml_model = joblib.load(MODEL_PATH)
+        with open(METADATA_PATH, "r") as f:
+            ml_metadata = json.load(f)
+        print(f"ML Model loaded: {ml_metadata['best_model_name']} (R²={ml_metadata['best_r2_score']})")
+    except Exception as e:
+        print(f"Warning: Could not load ML model ({e}). Run 'python models/train_model.py' first.")
+else:
+    print("ML model not found. Run 'python models/train_model.py' to train it first.")
+
+
+@app.route("/api/ml/metadata", methods=["GET"])
+def get_ml_metadata():
+    """
+    Returns the ML model information: model type, R² score, feature options
+    for populating the prediction form on the frontend dashboard.
+    """
+    if ml_metadata is None:
+        return jsonify({"error": "ML model not trained. Run models/train_model.py first."}), 404
+    return jsonify(ml_metadata), 200
+
+
+@app.route("/api/ml/predict", methods=["POST"])
+def predict_sales():
+    """
+    POST endpoint to predict sales revenue for a new supermarket transaction.
+
+    Accepts a JSON body like:
+    {
+        "Branch": "Branch A",
+        "City": "Yangon",
+        "Customer Type": "Member",
+        "Gender": "Female",
+        "Category": "Fashion accessories",
+        "Payment Method": "E-wallet",
+        "Unit Price": 65.0,
+        "Quantity": 4,
+        "Rating": 8.0
+    }
+
+    Returns predicted Sales ($) along with confidence info.
+    """
+    if ml_model is None:
+        return jsonify({"error": "ML model not available. Run models/train_model.py first."}), 503
+
+    data = request.get_json(silent=True)
+    if not data:
+        return jsonify({"error": "No JSON data provided in request body."}), 400
+
+    # Validate required fields
+    required_fields = ml_metadata["feature_columns"]
+    missing = [f for f in required_fields if f not in data]
+    if missing:
+        return jsonify({
+            "error": f"Missing required fields: {missing}",
+            "required_fields": required_fields
+        }), 400
+
+    try:
+        import pandas as pd
+        input_df = pd.DataFrame([{field: data[field] for field in required_fields}])
+        predicted_sales = float(ml_model.predict(input_df)[0])
+        true_sales = float(data["Unit Price"]) * float(data["Quantity"])
+
+        return jsonify({
+            "predicted_sales": round(predicted_sales, 2),
+            "true_sales_formula": round(true_sales, 2),
+            "model_used": ml_metadata["best_model_name"],
+            "model_r2_score": ml_metadata["best_r2_score"],
+            "input_received": data
+        }), 200
+
+    except Exception as e:
+        return jsonify({"error": f"Prediction failed: {str(e)}"}), 500
+
+
+# ---------------------------------------------------------------------------
 # GLOBAL ERROR HANDLERS
 # ---------------------------------------------------------------------------
 

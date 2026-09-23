@@ -524,11 +524,153 @@ st.download_button(
     mime="text/csv"
 )
 
+st.markdown("---")
+
+# ---------------------------------------------------------------------------
+# ROW 6: MACHINE LEARNING SALES PREDICTION CALCULATOR
+# ---------------------------------------------------------------------------
+st.subheader("🤖 ML Sales Predictor — Gradient Boosting Model")
+st.markdown(
+    "**Use our trained Machine Learning model to predict the sales revenue "
+    "for any new supermarket transaction!** Enter the transaction details "
+    "below and click **Predict Sales**."
+)
+
+# Load model metadata to know valid option values
+import joblib
+import json as json_lib
+
+MODEL_PKL_PATH = os.path.join(parent_dir, "models", "sales_predictor.pkl")
+MODEL_META_PATH = os.path.join(parent_dir, "models", "model_metadata.json")
+
+@st.cache_resource
+def load_ml_model():
+    """Load the trained ML pipeline from disk (cached so it loads only once)."""
+    if not os.path.exists(MODEL_PKL_PATH):
+        return None, None
+    model = joblib.load(MODEL_PKL_PATH)
+    with open(MODEL_META_PATH, "r") as f:
+        meta = json_lib.load(f)
+    return model, meta
+
+ml_model, ml_meta = load_ml_model()
+
+if ml_model is None:
+    st.warning(
+        "ML model not found. Run `python -X utf8 models/train_model.py` "
+        "in your terminal first to train the model."
+    )
+else:
+    # Show Model Performance Banner
+    r2 = ml_meta.get("best_r2_score", 0)
+    model_name = ml_meta.get("best_model_name", "")
+    opts = ml_meta.get("feature_options", {})
+
+    col_m1, col_m2, col_m3, col_m4 = st.columns(4)
+    col_m1.metric("Model", model_name)
+    col_m2.metric("R² Accuracy", f"{r2*100:.1f}%")
+    col_m3.metric("Mean Avg Error", f"${ml_meta['all_results'][model_name]['mae']}")
+    col_m4.metric("RMSE", f"${ml_meta['all_results'][model_name]['rmse']}")
+
+    st.write("")
+
+    # Input form for prediction
+    with st.form("ml_prediction_form"):
+        st.markdown("##### Enter Transaction Details")
+        pred_col1, pred_col2, pred_col3 = st.columns(3)
+
+        with pred_col1:
+            p_branch = st.selectbox("Branch", opts.get("Branch", ["Branch A", "Branch B", "Branch C"]))
+            p_city = st.selectbox("City", opts.get("City", ["Yangon", "Mandalay", "Naypyitaw"]))
+            p_category = st.selectbox("Product Category", opts.get("Category", []))
+
+        with pred_col2:
+            p_customer = st.selectbox("Customer Type", opts.get("Customer Type", ["Member", "Normal"]))
+            p_gender = st.selectbox("Gender", opts.get("Gender", ["Female", "Male"]))
+            p_payment = st.selectbox("Payment Method", opts.get("Payment Method", ["Cash", "Credit card", "E-wallet"]))
+
+        with pred_col3:
+            price_opts = opts.get("Unit Price", {"min": 5.0, "max": 99.0, "mean": 50.0})
+            p_unit_price = st.slider(
+                "Unit Price ($)",
+                min_value=float(price_opts["min"]),
+                max_value=float(price_opts["max"]),
+                value=float(price_opts["mean"]),
+                step=0.5
+            )
+            qty_opts = opts.get("Quantity", {"min": 1, "max": 10})
+            p_quantity = st.slider(
+                "Quantity (Units)",
+                min_value=int(qty_opts["min"]),
+                max_value=int(qty_opts["max"]),
+                value=5
+            )
+            rating_opts = opts.get("Rating", {"min": 4.0, "max": 10.0, "mean": 7.5})
+            p_rating = st.slider(
+                "Customer Rating",
+                min_value=float(rating_opts["min"]),
+                max_value=float(rating_opts["max"]),
+                value=float(rating_opts["mean"]),
+                step=0.1
+            )
+
+        submitted = st.form_submit_button("🔮 Predict Sales Revenue", use_container_width=True)
+
+    if submitted:
+        # Build the input DataFrame for the model
+        input_data = pd.DataFrame([{
+            "Branch": p_branch,
+            "City": p_city,
+            "Customer Type": p_customer,
+            "Gender": p_gender,
+            "Category": p_category,
+            "Payment Method": p_payment,
+            "Unit Price": p_unit_price,
+            "Quantity": p_quantity,
+            "Rating": p_rating
+        }])
+
+        predicted = float(ml_model.predict(input_data)[0])
+        true_formula = p_unit_price * p_quantity
+
+        st.markdown("---")
+        res_col1, res_col2, res_col3 = st.columns(3)
+        res_col1.metric(
+            label="🤖 ML Predicted Sales",
+            value=f"${predicted:,.2f}"
+        )
+        res_col2.metric(
+            label="📐 Formula Result (Qty × Price)",
+            value=f"${true_formula:,.2f}"
+        )
+        res_col3.metric(
+            label="📉 Prediction Difference",
+            value=f"${abs(predicted - true_formula):,.2f}"
+        )
+
+        st.success(
+            f"The **{model_name}** model (R²={r2:.4f}) predicts **${predicted:,.2f}** "
+            f"in sales revenue for this transaction — vs. the formula value of **${true_formula:,.2f}**."
+        )
+
+        # Show a simple bar chart comparing values (go is already imported at top)
+        fig_pred = go.Figure(data=[
+            go.Bar(name="ML Predicted", x=["Sales ($)"], y=[predicted], marker_color="#3b82f6"),
+            go.Bar(name="Formula (Qty×Price)", x=["Sales ($)"], y=[true_formula], marker_color="#10b981")
+        ])
+        fig_pred.update_layout(
+            title="Predicted vs. Formula Sales Comparison",
+            barmode="group",
+            height=300,
+            margin=dict(l=20, r=20, t=40, b=20)
+        )
+        st.plotly_chart(fig_pred, use_container_width=True)
+
 # Footer
 st.markdown("---")
 st.markdown(
     "<center style='color: #94a3b8; font-size: 0.85rem;'>"
-    "Supermarket Sales Analysis Project | Built with Python, Pandas, Flask & Streamlit"
+    "Supermarket Sales Analysis Project | Built with Python, Pandas, Flask, Scikit-learn & Streamlit"
     "</center>",
     unsafe_allow_html=True
 )

@@ -1,0 +1,98 @@
+{
+  "best_model_name": "Gradient Boosting",
+  "best_r2_score": 0.9903,
+  "feature_columns": [
+    "Branch",
+    "City",
+    "Customer Type",
+    "Gender",
+    "Category",
+    "Payment Method",
+    "Unit Price",
+    "Quantity",
+    "Rating"
+  ],
+  "categorical_features": [
+    "Branch",
+    "City",
+    "Customer Type",
+    "Gender",
+    "Category",
+    "Payment Method"
+  ],
+  "numerical_features": [
+    "Unit Price",
+    "Quantity",
+    "Rating"
+  ],
+  "target_column": "Sales",
+  "training_samples": 400,
+  "test_samples": 100,
+  "feature_options": {
+    "Branch": [
+      "Branch A",
+      "Branch B",
+      "Branch C"
+    ],
+    "City": [
+      "Mandalay",
+      "Naypyitaw",
+      "Yangon"
+    ],
+    "Customer Type": [
+      "Member",
+      "Normal"
+    ],
+    "Gender": [
+      "Female",
+      "Male"
+    ],
+    "Category": [
+      "Electronic accessories",
+      "Fashion accessories",
+      "Food and beverages",
+      "Health and beauty",
+      "Home and lifestyle",
+      "Sports and travel"
+    ],
+    "Payment Method": [
+      "Cash",
+      "Credit card",
+      "E-wallet"
+    ],
+    "Unit Price": {
+      "min": 6.85,
+      "max": 98.48,
+      "mean": 30.64
+    },
+    "Quantity": {
+      "min": 1,
+      "max": 10
+    },
+    "Rating": {
+      "min": 4.2,
+      "max": 9.7,
+      "mean": 7.3
+    }
+  },
+  "all_results": {
+    "Linear Regression": {
+      "r2_score": 0.7773,
+      "mae": 31.6403,
+      "rmse": 51.9703,
+      "cv_r2_mean": 0.8642
+    },
+    "Random Forest": {
+      "r2_score": 0.9781,
+      "mae": 7.4457,
+      "rmse": 16.2839,
+      "cv_r2_mean": 0.9731
+    },
+    "Gradient Boosting": {
+      "r2_score": 0.9903,
+      "mae": 5.4297,
+      "rmse": 10.8259,
+      "cv_r2_mean": 0.9807
+    }
+  }
+}
